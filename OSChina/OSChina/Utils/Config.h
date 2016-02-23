@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  Config.h
 //  OSChina
 //
 //  Created by apple on 16/2/23.
 //  Copyright © 2016年 apple. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
-
+@interface Config : NSObject
 
 @end
-
