@@ -10,6 +10,9 @@
 		182C78871C7BFFCC00FD2B63 /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C78861C7BFFCC00FD2B63 /* UIColor+Util.m */; settings = {ASSET_TAGS = (); }; };
 		182C788A1C7C00A700FD2B63 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C78891C7C00A700FD2B63 /* Config.m */; settings = {ASSET_TAGS = (); }; };
 		182C788D1C7C04A500FD2B63 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C788C1C7C04A500FD2B63 /* UIView+Util.m */; settings = {ASSET_TAGS = (); }; };
+		182C78931C7C0DB400FD2B63 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C78921C7C0DB400FD2B63 /* RootViewController.m */; settings = {ASSET_TAGS = (); }; };
+		182C78961C7C0DFB00FD2B63 /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C78951C7C0DFB00FD2B63 /* SideMenuViewController.m */; settings = {ASSET_TAGS = (); }; };
+		182C78991C7C0E5200FD2B63 /* OSCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C78981C7C0E5200FD2B63 /* OSCTabBarController.m */; settings = {ASSET_TAGS = (); }; };
 		18C11D081C7BF259001D2706 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C11D071C7BF259001D2706 /* main.m */; };
 		18C11D0B1C7BF259001D2706 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C11D0A1C7BF259001D2706 /* AppDelegate.m */; };
 		18C11D111C7BF259001D2706 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C11D0F1C7BF259001D2706 /* Main.storyboard */; };
@@ -26,6 +29,12 @@
 		182C78891C7C00A700FD2B63 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
 		182C788B1C7C04A500FD2B63 /* UIView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Util.h"; sourceTree = "<group>"; };
 		182C788C1C7C04A500FD2B63 /* UIView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Util.m"; sourceTree = "<group>"; };
+		182C78911C7C0DB400FD2B63 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		182C78921C7C0DB400FD2B63 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		182C78941C7C0DFB00FD2B63 /* SideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuViewController.h; sourceTree = "<group>"; };
+		182C78951C7C0DFB00FD2B63 /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuViewController.m; sourceTree = "<group>"; };
+		182C78971C7C0E5200FD2B63 /* OSCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCTabBarController.h; sourceTree = "<group>"; };
+		182C78981C7C0E5200FD2B63 /* OSCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCTabBarController.m; sourceTree = "<group>"; };
 		18C11D031C7BF259001D2706 /* OSChina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSChina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C11D071C7BF259001D2706 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18C11D091C7BF259001D2706 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,6 +81,35 @@
 			path = Catagory;
 			sourceTree = "<group>";
 		};
+		182C788E1C7C0D5D00FD2B63 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				182C78901C7C0D9200FD2B63 /* Tab Bar */,
+				182C788F1C7C0D7900FD2B63 /* 侧拉菜单 */,
+				182C78911C7C0DB400FD2B63 /* RootViewController.h */,
+				182C78921C7C0DB400FD2B63 /* RootViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		182C788F1C7C0D7900FD2B63 /* 侧拉菜单 */ = {
+			isa = PBXGroup;
+			children = (
+				182C78941C7C0DFB00FD2B63 /* SideMenuViewController.h */,
+				182C78951C7C0DFB00FD2B63 /* SideMenuViewController.m */,
+			);
+			path = "侧拉菜单";
+			sourceTree = "<group>";
+		};
+		182C78901C7C0D9200FD2B63 /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				182C78971C7C0E5200FD2B63 /* OSCTabBarController.h */,
+				182C78981C7C0E5200FD2B63 /* OSCTabBarController.m */,
+			);
+			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
 		18C11CFA1C7BF259001D2706 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +137,7 @@
 				18C11D121C7BF259001D2706 /* Assets.xcassets */,
 				18C11D141C7BF259001D2706 /* LaunchScreen.storyboard */,
 				18C11D171C7BF259001D2706 /* Info.plist */,
+				182C788E1C7C0D5D00FD2B63 /* Main */,
 				182C78831C7BFF9F00FD2B63 /* Utils */,
 				18C11D061C7BF259001D2706 /* Supporting Files */,
 			);
@@ -254,8 +293,11 @@
 			files = (
 				182C788D1C7C04A500FD2B63 /* UIView+Util.m in Sources */,
 				182C788A1C7C00A700FD2B63 /* Config.m in Sources */,
+				182C78931C7C0DB400FD2B63 /* RootViewController.m in Sources */,
 				18C11D0B1C7BF259001D2706 /* AppDelegate.m in Sources */,
 				18C11D081C7BF259001D2706 /* main.m in Sources */,
+				182C78991C7C0E5200FD2B63 /* OSCTabBarController.m in Sources */,
+				182C78961C7C0DFB00FD2B63 /* SideMenuViewController.m in Sources */,
 				182C78871C7BFFCC00FD2B63 /* UIColor+Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
