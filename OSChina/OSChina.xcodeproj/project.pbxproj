@@ -12,7 +12,6 @@
 		182C788D1C7C04A500FD2B63 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C788C1C7C04A500FD2B63 /* UIView+Util.m */; settings = {ASSET_TAGS = (); }; };
 		18C11D081C7BF259001D2706 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C11D071C7BF259001D2706 /* main.m */; };
 		18C11D0B1C7BF259001D2706 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C11D0A1C7BF259001D2706 /* AppDelegate.m */; };
-		18C11D0E1C7BF259001D2706 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C11D0D1C7BF259001D2706 /* ViewController.m */; };
 		18C11D111C7BF259001D2706 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C11D0F1C7BF259001D2706 /* Main.storyboard */; };
 		18C11D131C7BF259001D2706 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C11D121C7BF259001D2706 /* Assets.xcassets */; };
 		18C11D161C7BF259001D2706 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C11D141C7BF259001D2706 /* LaunchScreen.storyboard */; };
@@ -31,8 +30,6 @@
 		18C11D071C7BF259001D2706 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18C11D091C7BF259001D2706 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18C11D0A1C7BF259001D2706 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18C11D0C1C7BF259001D2706 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18C11D0D1C7BF259001D2706 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		18C11D101C7BF259001D2706 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18C11D121C7BF259001D2706 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18C11D151C7BF259001D2706 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,8 +95,6 @@
 			children = (
 				18C11D091C7BF259001D2706 /* AppDelegate.h */,
 				18C11D0A1C7BF259001D2706 /* AppDelegate.m */,
-				18C11D0C1C7BF259001D2706 /* ViewController.h */,
-				18C11D0D1C7BF259001D2706 /* ViewController.m */,
 				18C11D0F1C7BF259001D2706 /* Main.storyboard */,
 				18C11D121C7BF259001D2706 /* Assets.xcassets */,
 				18C11D141C7BF259001D2706 /* LaunchScreen.storyboard */,
@@ -259,7 +254,6 @@
 			files = (
 				182C788D1C7C04A500FD2B63 /* UIView+Util.m in Sources */,
 				182C788A1C7C00A700FD2B63 /* Config.m in Sources */,
-				18C11D0E1C7BF259001D2706 /* ViewController.m in Sources */,
 				18C11D0B1C7BF259001D2706 /* AppDelegate.m in Sources */,
 				18C11D081C7BF259001D2706 /* main.m in Sources */,
 				182C78871C7BFFCC00FD2B63 /* UIColor+Util.m in Sources */,
