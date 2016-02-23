@@ -10,4 +10,11 @@
 
 @interface Config : NSObject
 
++ (void)saveWhetherNightMode:(BOOL)isNight;
++ (BOOL)getMode;
++ (int64_t)getOwnID;
++ (NSArray *)getUsersInformation;
++ (UIImage *)getPortrait;
++ (NSString *)getOwnUserName;
+
 @end

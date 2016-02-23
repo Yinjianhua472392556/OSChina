@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182C78871C7BFFCC00FD2B63 /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C78861C7BFFCC00FD2B63 /* UIColor+Util.m */; settings = {ASSET_TAGS = (); }; };
+		182C788A1C7C00A700FD2B63 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C78891C7C00A700FD2B63 /* Config.m */; settings = {ASSET_TAGS = (); }; };
+		182C788D1C7C04A500FD2B63 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C788C1C7C04A500FD2B63 /* UIView+Util.m */; settings = {ASSET_TAGS = (); }; };
 		18C11D081C7BF259001D2706 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C11D071C7BF259001D2706 /* main.m */; };
 		18C11D0B1C7BF259001D2706 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C11D0A1C7BF259001D2706 /* AppDelegate.m */; };
 		18C11D0E1C7BF259001D2706 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C11D0D1C7BF259001D2706 /* ViewController.m */; };
@@ -18,6 +21,12 @@
 
 /* Begin PBXFileReference section */
 		182C78821C7BF97C00FD2B63 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		182C78851C7BFFCC00FD2B63 /* UIColor+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Util.h"; sourceTree = "<group>"; };
+		182C78861C7BFFCC00FD2B63 /* UIColor+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Util.m"; sourceTree = "<group>"; };
+		182C78881C7C00A700FD2B63 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		182C78891C7C00A700FD2B63 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		182C788B1C7C04A500FD2B63 /* UIView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Util.h"; sourceTree = "<group>"; };
+		182C788C1C7C04A500FD2B63 /* UIView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Util.m"; sourceTree = "<group>"; };
 		18C11D031C7BF259001D2706 /* OSChina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSChina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C11D071C7BF259001D2706 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18C11D091C7BF259001D2706 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,6 +54,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		182C78831C7BFF9F00FD2B63 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				182C78841C7BFFB200FD2B63 /* Catagory */,
+				182C78881C7C00A700FD2B63 /* Config.h */,
+				182C78891C7C00A700FD2B63 /* Config.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		182C78841C7BFFB200FD2B63 /* Catagory */ = {
+			isa = PBXGroup;
+			children = (
+				182C78851C7BFFCC00FD2B63 /* UIColor+Util.h */,
+				182C78861C7BFFCC00FD2B63 /* UIColor+Util.m */,
+				182C788B1C7C04A500FD2B63 /* UIView+Util.h */,
+				182C788C1C7C04A500FD2B63 /* UIView+Util.m */,
+			);
+			path = Catagory;
+			sourceTree = "<group>";
+		};
 		18C11CFA1C7BF259001D2706 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +104,7 @@
 				18C11D121C7BF259001D2706 /* Assets.xcassets */,
 				18C11D141C7BF259001D2706 /* LaunchScreen.storyboard */,
 				18C11D171C7BF259001D2706 /* Info.plist */,
+				182C78831C7BFF9F00FD2B63 /* Utils */,
 				18C11D061C7BF259001D2706 /* Supporting Files */,
 			);
 			path = OSChina;
@@ -226,9 +257,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182C788D1C7C04A500FD2B63 /* UIView+Util.m in Sources */,
+				182C788A1C7C00A700FD2B63 /* Config.m in Sources */,
 				18C11D0E1C7BF259001D2706 /* ViewController.m in Sources */,
 				18C11D0B1C7BF259001D2706 /* AppDelegate.m in Sources */,
 				18C11D081C7BF259001D2706 /* main.m in Sources */,
+				182C78871C7BFFCC00FD2B63 /* UIColor+Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

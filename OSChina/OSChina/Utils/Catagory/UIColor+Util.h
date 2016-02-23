@@ -10,4 +10,17 @@
 
 @interface UIColor (Util)
 
++ (UIColor *)colorWithHex:(int)hexValue alpha:(CGFloat)alpha;
++ (UIColor *)colorWithHex:(int)hexValue;
++ (UIColor *)navigationbarColor;
++ (UIColor *)titleBarColor;
++ (UIColor *)nameColor;
++ (UIColor *)selectCellSColor;
++ (UIColor *)themeColor;
++ (UIColor *)titleColor;
++ (UIColor *)separatorColor;
++ (UIColor *)contentTextColor;
++ (UIColor *)cellsColor;
++ (UIColor *)borderColor;
+
 @end
