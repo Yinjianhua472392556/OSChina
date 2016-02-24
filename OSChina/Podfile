@@ -16,3 +16,4 @@ pod 'TBXML'
 pod "WeiboSDK", :git => "https://github.com/sinaweibosdk/weibo_ios_sdk"
 pod 'ReactiveCocoa', '~> 2.5'
 pod 'Reachability', '~> 3.2'
+pod 'Masonry'
