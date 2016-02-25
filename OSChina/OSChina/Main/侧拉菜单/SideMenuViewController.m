@@ -92,16 +92,17 @@ static BOOL isNight;
     [headerView addSubview:nameLabel];
 
     [portraitView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(headerView).offset(0);
-        make.left.equalTo(headerView).offset(0);
+        make.top.equalTo(headerView.mas_top).offset(40);
+//        make.left.equalTo(headerView);
+        make.left.equalTo(@([UIScreen mainScreen].bounds.size.width / 4 - 15));
         make.width.equalTo(@(60));
         make.height.equalTo(@(60));
-        make.bottom.equalTo(nameLabel).offset(10);
     }];
     
     [nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(headerView.mas_centerX);
-        make.bottom.equalTo(headerView).offset(15);
+        make.top.equalTo(portraitView.mas_bottom).offset(10);
+        make.centerX.equalTo(portraitView.mas_centerX);
+        make.bottom.equalTo(headerView.mas_bottom).offset(15);
     }];
     
     [portraitView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushLoginPage)]];
