@@ -18,6 +18,9 @@
 #import "AppDelegate.h"
 #import "SwipableViewController.h"
 #import "PostsViewController.h"
+#import "SoftwareListVC.h"
+#import "SoftwareCatalogVC.h"
+#import "BlogsViewController.h"
 
 static BOOL isNight;
 
@@ -166,11 +169,25 @@ static BOOL isNight;
             [self setContentViewController:newsSVC];
             break;
         }
-        case 1:
+        case 1: {
+            SwipableViewController *softwaresSVC = [[SwipableViewController alloc] initWithTitle:@"开源软件" andSubTitles:@[@"分类", @"推荐", @"最新", @"热门", @"国产"] andControllers:@[
+                                                                                                                                                                            [[SoftwareCatalogVC alloc] initWithTag:0],
+                                                                                                                                                                            [[SoftwareListVC alloc] initWithSoftwaresType:SoftwaresTypeRecommended],
+                                                                                                                                                                            [[SoftwareListVC alloc] initWithSoftwaresType:SoftwaresTypeNewest],
+                                                                                                                                                                            [[SoftwareListVC alloc] initWithSoftwaresType:SoftwaresTypeHottest],
+                                                                                                                                                                            [[SoftwareListVC alloc] initWithSoftwaresType:SoftwaresTypeCN]
+                                                                                                                                                                            ]];
+            [self setContentViewController:softwaresSVC];
+            break;
+        }
+        case 2: {
+            SwipableViewController *blogsSVC = [[SwipableViewController alloc] initWithTitle:@"博客区" andSubTitles:@[@"最新博客", @"推荐阅读"] andControllers:@[
+                                                                                                                                                      [[BlogsViewController alloc] initWithBlogsType:BlogsTypeLatest],
+                                                                                                                                                      [[BlogsViewController alloc] initWithBlogsType:BlogsTypeRecommended]]];
+            [self setContentViewController:blogsSVC];
             
             break;
-        case 2:
-            break;
+        }
         case 3:
             break;
         case 4:

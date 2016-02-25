@@ -330,6 +330,14 @@
 		1876511C1C7EAACF00E4E269 /* widget_repaste_icon副本.png in Resources */ = {isa = PBXBuildFile; fileRef = 18764FEF1C7EAACF00E4E269 /* widget_repaste_icon副本.png */; settings = {ASSET_TAGS = (); }; };
 		1876511D1C7EAACF00E4E269 /* widget_today_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 18764FF01C7EAACF00E4E269 /* widget_today_icon.png */; settings = {ASSET_TAGS = (); }; };
 		1876511E1C7EAACF00E4E269 /* widget_today_icon副本.png in Resources */ = {isa = PBXBuildFile; fileRef = 18764FF11C7EAACF00E4E269 /* widget_today_icon副本.png */; settings = {ASSET_TAGS = (); }; };
+		187651221C7ED7CC00E4E269 /* SoftwareCatalogVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187651211C7ED7CC00E4E269 /* SoftwareCatalogVC.m */; settings = {ASSET_TAGS = (); }; };
+		187651261C7EDB5F00E4E269 /* OSCSoftwareCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = 187651251C7EDB5F00E4E269 /* OSCSoftwareCatalog.m */; settings = {ASSET_TAGS = (); }; };
+		187651291C7EE01000E4E269 /* SoftwareListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 187651281C7EE01000E4E269 /* SoftwareListVC.m */; settings = {ASSET_TAGS = (); }; };
+		1876512C1C7EE26400E4E269 /* OSCSoftware.m in Sources */ = {isa = PBXBuildFile; fileRef = 1876512B1C7EE26400E4E269 /* OSCSoftware.m */; settings = {ASSET_TAGS = (); }; };
+		1876512F1C7EE80D00E4E269 /* SoftwareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1876512E1C7EE80D00E4E269 /* SoftwareCell.m */; settings = {ASSET_TAGS = (); }; };
+		187651331C7EEDCF00E4E269 /* BlogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187651321C7EEDCF00E4E269 /* BlogsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		187651361C7EEDE800E4E269 /* BlogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187651351C7EEDE800E4E269 /* BlogCell.m */; settings = {ASSET_TAGS = (); }; };
+		1876513A1C7EF09000E4E269 /* OSCBlog.m in Sources */ = {isa = PBXBuildFile; fileRef = 187651391C7EF09000E4E269 /* OSCBlog.m */; settings = {ASSET_TAGS = (); }; };
 		18C11D081C7BF259001D2706 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C11D071C7BF259001D2706 /* main.m */; };
 		18C11D0B1C7BF259001D2706 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C11D0A1C7BF259001D2706 /* AppDelegate.m */; };
 		18C11D111C7BF259001D2706 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C11D0F1C7BF259001D2706 /* Main.storyboard */; };
@@ -685,6 +693,22 @@
 		18764FEF1C7EAACF00E4E269 /* widget_repaste_icon副本.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "widget_repaste_icon副本.png"; sourceTree = "<group>"; };
 		18764FF01C7EAACF00E4E269 /* widget_today_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = widget_today_icon.png; sourceTree = "<group>"; };
 		18764FF11C7EAACF00E4E269 /* widget_today_icon副本.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "widget_today_icon副本.png"; sourceTree = "<group>"; };
+		187651201C7ED7CC00E4E269 /* SoftwareCatalogVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoftwareCatalogVC.h; sourceTree = "<group>"; };
+		187651211C7ED7CC00E4E269 /* SoftwareCatalogVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoftwareCatalogVC.m; sourceTree = "<group>"; };
+		187651241C7EDB5F00E4E269 /* OSCSoftwareCatalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCSoftwareCatalog.h; sourceTree = "<group>"; };
+		187651251C7EDB5F00E4E269 /* OSCSoftwareCatalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCSoftwareCatalog.m; sourceTree = "<group>"; };
+		187651271C7EE01000E4E269 /* SoftwareListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoftwareListVC.h; sourceTree = "<group>"; };
+		187651281C7EE01000E4E269 /* SoftwareListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoftwareListVC.m; sourceTree = "<group>"; };
+		1876512A1C7EE26400E4E269 /* OSCSoftware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCSoftware.h; sourceTree = "<group>"; };
+		1876512B1C7EE26400E4E269 /* OSCSoftware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCSoftware.m; sourceTree = "<group>"; };
+		1876512D1C7EE80D00E4E269 /* SoftwareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoftwareCell.h; sourceTree = "<group>"; };
+		1876512E1C7EE80D00E4E269 /* SoftwareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoftwareCell.m; sourceTree = "<group>"; };
+		187651311C7EEDCF00E4E269 /* BlogsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogsViewController.h; sourceTree = "<group>"; };
+		187651321C7EEDCF00E4E269 /* BlogsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogsViewController.m; sourceTree = "<group>"; };
+		187651341C7EEDE800E4E269 /* BlogCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogCell.h; sourceTree = "<group>"; };
+		187651351C7EEDE800E4E269 /* BlogCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogCell.m; sourceTree = "<group>"; };
+		187651381C7EF09000E4E269 /* OSCBlog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCBlog.h; sourceTree = "<group>"; };
+		187651391C7EF09000E4E269 /* OSCBlog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCBlog.m; sourceTree = "<group>"; };
 		18C11D031C7BF259001D2706 /* OSChina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSChina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C11D071C7BF259001D2706 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18C11D091C7BF259001D2706 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -814,6 +838,8 @@
 		182C78AE1C7C4D1A00FD2B63 /* OSC */ = {
 			isa = PBXGroup;
 			children = (
+				187651371C7EF07100E4E269 /* Blog */,
+				187651231C7EDB3D00E4E269 /* Software */,
 				18764EB11C7E8C7900E4E269 /* Post */,
 				182C78AF1C7C4D3000FD2B63 /* OSCBaseObject.h */,
 				182C78B01C7C4D3000FD2B63 /* OSCBaseObject.m */,
@@ -1255,6 +1281,50 @@
 			path = "user-background";
 			sourceTree = "<group>";
 		};
+		1876511F1C7ED79F00E4E269 /* 软件 */ = {
+			isa = PBXGroup;
+			children = (
+				187651201C7ED7CC00E4E269 /* SoftwareCatalogVC.h */,
+				187651211C7ED7CC00E4E269 /* SoftwareCatalogVC.m */,
+				187651271C7EE01000E4E269 /* SoftwareListVC.h */,
+				187651281C7EE01000E4E269 /* SoftwareListVC.m */,
+				1876512D1C7EE80D00E4E269 /* SoftwareCell.h */,
+				1876512E1C7EE80D00E4E269 /* SoftwareCell.m */,
+			);
+			path = "软件";
+			sourceTree = "<group>";
+		};
+		187651231C7EDB3D00E4E269 /* Software */ = {
+			isa = PBXGroup;
+			children = (
+				187651241C7EDB5F00E4E269 /* OSCSoftwareCatalog.h */,
+				187651251C7EDB5F00E4E269 /* OSCSoftwareCatalog.m */,
+				1876512A1C7EE26400E4E269 /* OSCSoftware.h */,
+				1876512B1C7EE26400E4E269 /* OSCSoftware.m */,
+			);
+			path = Software;
+			sourceTree = "<group>";
+		};
+		187651301C7EEDB300E4E269 /* 博客 */ = {
+			isa = PBXGroup;
+			children = (
+				187651311C7EEDCF00E4E269 /* BlogsViewController.h */,
+				187651321C7EEDCF00E4E269 /* BlogsViewController.m */,
+				187651341C7EEDE800E4E269 /* BlogCell.h */,
+				187651351C7EEDE800E4E269 /* BlogCell.m */,
+			);
+			path = "博客";
+			sourceTree = "<group>";
+		};
+		187651371C7EF07100E4E269 /* Blog */ = {
+			isa = PBXGroup;
+			children = (
+				187651381C7EF09000E4E269 /* OSCBlog.h */,
+				187651391C7EF09000E4E269 /* OSCBlog.m */,
+			);
+			path = Blog;
+			sourceTree = "<group>";
+		};
 		18C11CFA1C7BF259001D2706 = {
 			isa = PBXGroup;
 			children = (
@@ -1283,6 +1353,8 @@
 				18C11D121C7BF259001D2706 /* Assets.xcassets */,
 				18C11D141C7BF259001D2706 /* LaunchScreen.storyboard */,
 				18C11D171C7BF259001D2706 /* Info.plist */,
+				187651301C7EEDB300E4E269 /* 博客 */,
+				1876511F1C7ED79F00E4E269 /* 软件 */,
 				18764EB81C7EAACE00E4E269 /* Resource */,
 				18764EAD1C7DB08C00E4E269 /* 帖子 */,
 				18764EA71C7D83BC00E4E269 /* 用户 */,
@@ -1744,8 +1816,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1876512C1C7EE26400E4E269 /* OSCSoftware.m in Sources */,
 				182C78BD1C7C545C00FD2B63 /* NSTextAttachment+Util.m in Sources */,
 				182C78C01C7C54DD00FD2B63 /* AFHTTPRequestOperationManager+Util.m in Sources */,
+				187651261C7EDB5F00E4E269 /* OSCSoftwareCatalog.m in Sources */,
 				182C788D1C7C04A500FD2B63 /* UIView+Util.m in Sources */,
 				182C78B11C7C4D3000FD2B63 /* OSCBaseObject.m in Sources */,
 				18764EAC1C7D840300E4E269 /* LoginViewController.m in Sources */,
@@ -1754,10 +1828,13 @@
 				182C78B41C7C51D400FD2B63 /* Utils.m in Sources */,
 				18764EB01C7DB0D100E4E269 /* PostsViewController.m in Sources */,
 				18764EB41C7E8CA700E4E269 /* OSCPost.m in Sources */,
+				1876513A1C7EF09000E4E269 /* OSCBlog.m in Sources */,
+				1876512F1C7EE80D00E4E269 /* SoftwareCell.m in Sources */,
 				182C788A1C7C00A700FD2B63 /* Config.m in Sources */,
 				182C78931C7C0DB400FD2B63 /* RootViewController.m in Sources */,
 				182C78AC1C7C3A0000FD2B63 /* LastCell.m in Sources */,
 				18C11D0B1C7BF259001D2706 /* AppDelegate.m in Sources */,
+				187651361C7EEDE800E4E269 /* BlogCell.m in Sources */,
 				18C11D081C7BF259001D2706 /* main.m in Sources */,
 				182C78A41C7C385F00FD2B63 /* HorizonalTableViewController.m in Sources */,
 				182C78991C7C0E5200FD2B63 /* OSCTabBarController.m in Sources */,
@@ -1765,8 +1842,11 @@
 				182C78BA1C7C52AC00FD2B63 /* UIImage+Util.m in Sources */,
 				182C78A71C7C387700FD2B63 /* SwipableViewController.m in Sources */,
 				18764EB71C7E90B000E4E269 /* PostCell.m in Sources */,
+				187651221C7ED7CC00E4E269 /* SoftwareCatalogVC.m in Sources */,
+				187651331C7EEDCF00E4E269 /* BlogsViewController.m in Sources */,
 				182C78961C7C0DFB00FD2B63 /* SideMenuViewController.m in Sources */,
 				182C78871C7BFFCC00FD2B63 /* UIColor+Util.m in Sources */,
+				187651291C7EE01000E4E269 /* SoftwareListVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
