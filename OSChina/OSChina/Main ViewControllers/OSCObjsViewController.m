@@ -53,6 +53,12 @@
         header;
     });
     
+    
+    _label = [UILabel new];
+    _label.numberOfLines = 0;
+    _label.lineBreakMode = NSLineBreakByWordWrapping;
+    _label.font = [UIFont boldSystemFontOfSize:14];
+    
     _lastCell.textLabel.textColor = [UIColor titleColor];
     
     /*** 自动刷新 ***/

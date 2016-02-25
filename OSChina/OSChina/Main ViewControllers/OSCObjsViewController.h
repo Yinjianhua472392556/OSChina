@@ -34,4 +34,11 @@
 @property (nonatomic, copy) NSString *kLastRefreshTime;
 @property (nonatomic, assign) NSTimeInterval refreshInterval;
 
+
+@property (nonatomic, strong) UILabel *label;
+
+- (NSArray *)parseXML:(ONOXMLDocument *)xml;
+- (void)fetchMore;
+- (void)refresh;
+
 @end
