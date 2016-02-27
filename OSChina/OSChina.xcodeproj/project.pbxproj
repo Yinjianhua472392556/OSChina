@@ -343,6 +343,15 @@
 		18C11D111C7BF259001D2706 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C11D0F1C7BF259001D2706 /* Main.storyboard */; };
 		18C11D131C7BF259001D2706 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C11D121C7BF259001D2706 /* Assets.xcassets */; };
 		18C11D161C7BF259001D2706 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C11D141C7BF259001D2706 /* LaunchScreen.storyboard */; };
+		18F02ADC1C7FE3B00080AE1F /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F02ADB1C7FE3B00080AE1F /* NewsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		18F02AE01C7FE69D0080AE1F /* OSCNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F02ADF1C7FE69D0080AE1F /* OSCNews.m */; settings = {ASSET_TAGS = (); }; };
+		18F02AE31C7FEC1F0080AE1F /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F02AE21C7FEC1F0080AE1F /* NewsCell.m */; settings = {ASSET_TAGS = (); }; };
+		18F02AE61C7FF6080080AE1F /* TweetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F02AE51C7FF6080080AE1F /* TweetsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		18F02AE91C7FF6310080AE1F /* TweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F02AE81C7FF6310080AE1F /* TweetCell.m */; settings = {ASSET_TAGS = (); }; };
+		18F02AEC1C7FF6800080AE1F /* OSCTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F02AEB1C7FF6800080AE1F /* OSCTweet.m */; settings = {ASSET_TAGS = (); }; };
+		18F02AEF1C7FF9D30080AE1F /* OSCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F02AEE1C7FF9D30080AE1F /* OSCUser.m */; settings = {ASSET_TAGS = (); }; };
+		18F02AF31C8028F30080AE1F /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F02AF21C8028F30080AE1F /* UIFont+FontAwesome.m */; settings = {ASSET_TAGS = (); }; };
+		18F02AF61C80295D0080AE1F /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F02AF51C80295D0080AE1F /* NSString+FontAwesome.m */; settings = {ASSET_TAGS = (); }; };
 		D742019AFB9328ED87342F73 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C61B47567F51103C41ADB24 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -717,6 +726,24 @@
 		18C11D121C7BF259001D2706 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18C11D151C7BF259001D2706 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18C11D171C7BF259001D2706 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F02ADA1C7FE3B00080AE1F /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		18F02ADB1C7FE3B00080AE1F /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		18F02ADE1C7FE69D0080AE1F /* OSCNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCNews.h; sourceTree = "<group>"; };
+		18F02ADF1C7FE69D0080AE1F /* OSCNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCNews.m; sourceTree = "<group>"; };
+		18F02AE11C7FEC1F0080AE1F /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		18F02AE21C7FEC1F0080AE1F /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
+		18F02AE41C7FF6080080AE1F /* TweetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetsViewController.h; sourceTree = "<group>"; };
+		18F02AE51C7FF6080080AE1F /* TweetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetsViewController.m; sourceTree = "<group>"; };
+		18F02AE71C7FF6310080AE1F /* TweetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetCell.h; sourceTree = "<group>"; };
+		18F02AE81C7FF6310080AE1F /* TweetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetCell.m; sourceTree = "<group>"; };
+		18F02AEA1C7FF6800080AE1F /* OSCTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCTweet.h; sourceTree = "<group>"; };
+		18F02AEB1C7FF6800080AE1F /* OSCTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCTweet.m; sourceTree = "<group>"; };
+		18F02AED1C7FF9D30080AE1F /* OSCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCUser.h; sourceTree = "<group>"; };
+		18F02AEE1C7FF9D30080AE1F /* OSCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCUser.m; sourceTree = "<group>"; };
+		18F02AF11C8028F30080AE1F /* UIFont+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FontAwesome.h"; sourceTree = "<group>"; };
+		18F02AF21C8028F30080AE1F /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FontAwesome.m"; sourceTree = "<group>"; };
+		18F02AF41C80295D0080AE1F /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		18F02AF51C80295D0080AE1F /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
 		68D197F841872F9F981173CE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6C61B47567F51103C41ADB24 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42589654B1D12E59DE22A09 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -750,6 +777,7 @@
 		182C78841C7BFFB200FD2B63 /* Catagory */ = {
 			isa = PBXGroup;
 			children = (
+				18F02AF01C8028D50080AE1F /* FontAwesome */,
 				182C78851C7BFFCC00FD2B63 /* UIColor+Util.h */,
 				182C78861C7BFFCC00FD2B63 /* UIColor+Util.m */,
 				182C788B1C7C04A500FD2B63 /* UIView+Util.h */,
@@ -838,11 +866,16 @@
 		182C78AE1C7C4D1A00FD2B63 /* OSC */ = {
 			isa = PBXGroup;
 			children = (
+				18F02ADD1C7FE6860080AE1F /* News */,
 				187651371C7EF07100E4E269 /* Blog */,
 				187651231C7EDB3D00E4E269 /* Software */,
 				18764EB11C7E8C7900E4E269 /* Post */,
 				182C78AF1C7C4D3000FD2B63 /* OSCBaseObject.h */,
 				182C78B01C7C4D3000FD2B63 /* OSCBaseObject.m */,
+				18F02AEA1C7FF6800080AE1F /* OSCTweet.h */,
+				18F02AEB1C7FF6800080AE1F /* OSCTweet.m */,
+				18F02AED1C7FF9D30080AE1F /* OSCUser.h */,
+				18F02AEE1C7FF9D30080AE1F /* OSCUser.m */,
 			);
 			path = OSC;
 			sourceTree = "<group>";
@@ -1353,6 +1386,8 @@
 				18C11D121C7BF259001D2706 /* Assets.xcassets */,
 				18C11D141C7BF259001D2706 /* LaunchScreen.storyboard */,
 				18C11D171C7BF259001D2706 /* Info.plist */,
+				18F02AD91C7FDEF20080AE1F /* 动弹 */,
+				18F02AD81C7FDE9B0080AE1F /* 新闻 */,
 				187651301C7EEDB300E4E269 /* 博客 */,
 				1876511F1C7ED79F00E4E269 /* 软件 */,
 				18764EB81C7EAACE00E4E269 /* Resource */,
@@ -1374,6 +1409,48 @@
 				182C78821C7BF97C00FD2B63 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18F02AD81C7FDE9B0080AE1F /* 新闻 */ = {
+			isa = PBXGroup;
+			children = (
+				18F02ADA1C7FE3B00080AE1F /* NewsViewController.h */,
+				18F02ADB1C7FE3B00080AE1F /* NewsViewController.m */,
+				18F02AE11C7FEC1F0080AE1F /* NewsCell.h */,
+				18F02AE21C7FEC1F0080AE1F /* NewsCell.m */,
+			);
+			path = "新闻";
+			sourceTree = "<group>";
+		};
+		18F02AD91C7FDEF20080AE1F /* 动弹 */ = {
+			isa = PBXGroup;
+			children = (
+				18F02AE41C7FF6080080AE1F /* TweetsViewController.h */,
+				18F02AE51C7FF6080080AE1F /* TweetsViewController.m */,
+				18F02AE71C7FF6310080AE1F /* TweetCell.h */,
+				18F02AE81C7FF6310080AE1F /* TweetCell.m */,
+			);
+			path = "动弹";
+			sourceTree = "<group>";
+		};
+		18F02ADD1C7FE6860080AE1F /* News */ = {
+			isa = PBXGroup;
+			children = (
+				18F02ADE1C7FE69D0080AE1F /* OSCNews.h */,
+				18F02ADF1C7FE69D0080AE1F /* OSCNews.m */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		18F02AF01C8028D50080AE1F /* FontAwesome */ = {
+			isa = PBXGroup;
+			children = (
+				18F02AF11C8028F30080AE1F /* UIFont+FontAwesome.h */,
+				18F02AF21C8028F30080AE1F /* UIFont+FontAwesome.m */,
+				18F02AF41C80295D0080AE1F /* NSString+FontAwesome.h */,
+				18F02AF51C80295D0080AE1F /* NSString+FontAwesome.m */,
+			);
+			path = FontAwesome;
 			sourceTree = "<group>";
 		};
 		E88366155100AF08BC541269 /* Frameworks */ = {
@@ -1818,27 +1895,36 @@
 			files = (
 				1876512C1C7EE26400E4E269 /* OSCSoftware.m in Sources */,
 				182C78BD1C7C545C00FD2B63 /* NSTextAttachment+Util.m in Sources */,
+				18F02AF31C8028F30080AE1F /* UIFont+FontAwesome.m in Sources */,
+				18F02AEC1C7FF6800080AE1F /* OSCTweet.m in Sources */,
 				182C78C01C7C54DD00FD2B63 /* AFHTTPRequestOperationManager+Util.m in Sources */,
 				187651261C7EDB5F00E4E269 /* OSCSoftwareCatalog.m in Sources */,
 				182C788D1C7C04A500FD2B63 /* UIView+Util.m in Sources */,
 				182C78B11C7C4D3000FD2B63 /* OSCBaseObject.m in Sources */,
+				18F02AE61C7FF6080080AE1F /* TweetsViewController.m in Sources */,
+				18F02AE01C7FE69D0080AE1F /* OSCNews.m in Sources */,
 				18764EAC1C7D840300E4E269 /* LoginViewController.m in Sources */,
 				182C78B71C7C522C00FD2B63 /* UIImageView+Util.m in Sources */,
 				182C789D1C7C37E900FD2B63 /* OSCObjsViewController.m in Sources */,
 				182C78B41C7C51D400FD2B63 /* Utils.m in Sources */,
 				18764EB01C7DB0D100E4E269 /* PostsViewController.m in Sources */,
+				18F02ADC1C7FE3B00080AE1F /* NewsViewController.m in Sources */,
 				18764EB41C7E8CA700E4E269 /* OSCPost.m in Sources */,
 				1876513A1C7EF09000E4E269 /* OSCBlog.m in Sources */,
 				1876512F1C7EE80D00E4E269 /* SoftwareCell.m in Sources */,
 				182C788A1C7C00A700FD2B63 /* Config.m in Sources */,
+				18F02AF61C80295D0080AE1F /* NSString+FontAwesome.m in Sources */,
 				182C78931C7C0DB400FD2B63 /* RootViewController.m in Sources */,
 				182C78AC1C7C3A0000FD2B63 /* LastCell.m in Sources */,
 				18C11D0B1C7BF259001D2706 /* AppDelegate.m in Sources */,
+				18F02AEF1C7FF9D30080AE1F /* OSCUser.m in Sources */,
 				187651361C7EEDE800E4E269 /* BlogCell.m in Sources */,
 				18C11D081C7BF259001D2706 /* main.m in Sources */,
+				18F02AE31C7FEC1F0080AE1F /* NewsCell.m in Sources */,
 				182C78A41C7C385F00FD2B63 /* HorizonalTableViewController.m in Sources */,
 				182C78991C7C0E5200FD2B63 /* OSCTabBarController.m in Sources */,
 				182C78A11C7C384100FD2B63 /* TitleBarView.m in Sources */,
+				18F02AE91C7FF6310080AE1F /* TweetCell.m in Sources */,
 				182C78BA1C7C52AC00FD2B63 /* UIImage+Util.m in Sources */,
 				182C78A71C7C387700FD2B63 /* SwipableViewController.m in Sources */,
 				18764EB71C7E90B000E4E269 /* PostCell.m in Sources */,
