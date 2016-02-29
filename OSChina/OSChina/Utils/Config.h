@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class OSCMyInfo;
+
 @interface Config : NSObject
 
 + (void)saveWhetherNightMode:(BOOL)isNight;
@@ -16,5 +18,7 @@
 + (NSArray *)getUsersInformation;
 + (UIImage *)getPortrait;
 + (NSString *)getOwnUserName;
++ (void)savePortrait:(UIImage *)portrait;
++ (void)updateMyInfo:(OSCMyInfo *)myInfo;
 
 @end

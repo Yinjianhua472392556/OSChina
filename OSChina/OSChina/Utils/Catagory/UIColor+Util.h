@@ -22,5 +22,7 @@
 + (UIColor *)contentTextColor;
 + (UIColor *)cellsColor;
 + (UIColor *)borderColor;
++ (UIColor *)refreshControlColor;
++ (UIColor *)lineColor;
 
 @end

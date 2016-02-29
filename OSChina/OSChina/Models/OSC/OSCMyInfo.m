@@ -1,0 +1,41 @@
+//
+//  OSCMyInfo.m
+//  OSChina
+//
+//  Created by apple on 16/2/29.
+//  Copyright © 2016年 apple. All rights reserved.
+//
+
+#import "OSCMyInfo.h"
+
+@implementation OSCMyInfo
+
+- (instancetype)initWithXML:(ONOXMLElement *)xml {
+
+    self = [super init];
+    if (self) {
+        _name = [[[xml firstChildWithTag:@"name"] stringValue] copy];
+        _portraitURL = [NSURL URLWithString:[[xml firstChildWithTag:@"portrait"] stringValue]];
+        _hometown           = [[[xml firstChildWithTag:@"from"] stringValue] copy];
+        _developPlatform    = [[[xml firstChildWithTag:@"devplatform"] stringValue] copy];
+        _expertise          = [[[xml firstChildWithTag:@"expertise"] stringValue] copy];
+        _joinTime           = [[[xml firstChildWithTag:@"joinTime"] stringValue] copy];
+        _gender             = [[[xml firstChildWithTag:@"gender"] numberValue] intValue];
+        _favoriteCount      = [[[xml firstChildWithTag:@"favoritecount"] numberValue] intValue];
+        _fansCount          = [[[xml firstChildWithTag:@"fans"] numberValue] intValue];
+        _followersCount     = [[[xml firstChildWithTag:@"followers"] numberValue] intValue];
+        _score              = [[[xml firstChildWithTag:@"score"] numberValue] intValue];
+
+    }
+    return self;
+}
+
+- (void)setDetailInformationJointime:(NSString *)jointime andHometown:(NSString *)hometown andDevelopPlatform:(NSString *)developPlatform andExpertise:(NSString *)expertise {
+
+    _joinTime = jointime;
+    _hometown = hometown;
+    _developPlatform = developPlatform;
+    _expertise = expertise;
+}
+
+@end

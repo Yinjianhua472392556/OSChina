@@ -10,6 +10,7 @@
 #import "MBProgressHUD.h"
 #import "NSString+FontAwesome.h"
 #import "UIFont+FontAwesome.h"
+#import "Reachability.h"
 
 
 @implementation Utils
@@ -167,5 +168,15 @@
         attributedClientString = [[NSMutableAttributedString alloc] initWithString:@""];
     }
     return attributedClientString;
+}
+
++ (BOOL)isNetworkExist {
+
+    return [self networkStatus] > 0;
+}
+
++ (NSInteger)networkStatus {
+    Reachability *reachability = [Reachability reachabilityWithHostName:@"www.oschina.net"];
+    return reachability.currentReachabilityStatus;
 }
 @end

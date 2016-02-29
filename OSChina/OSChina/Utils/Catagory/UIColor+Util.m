@@ -105,4 +105,18 @@
     return [UIColor lightGrayColor];
 }
 
++ (UIColor *)refreshControlColor {
+    if (((AppDelegate *)[UIApplication sharedApplication].delegate).inNightMode) {
+        return [UIColor colorWithHex:0x13502A];
+    }
+    return [UIColor colorWithHex:0x21B04B];
+}
+
++ (UIColor *)lineColor {
+    if (((AppDelegate *)[UIApplication sharedApplication].delegate).inNightMode) {
+        return [UIColor colorWithRed:18.0/255 green:144.0/255 blue:105.0/255 alpha:0.6];
+    }
+    return [UIColor colorWithHex:0x2bc157];
+}
+
 @end

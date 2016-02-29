@@ -338,6 +338,14 @@
 		187651331C7EEDCF00E4E269 /* BlogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187651321C7EEDCF00E4E269 /* BlogsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		187651361C7EEDE800E4E269 /* BlogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187651351C7EEDE800E4E269 /* BlogCell.m */; settings = {ASSET_TAGS = (); }; };
 		1876513A1C7EF09000E4E269 /* OSCBlog.m in Sources */ = {isa = PBXBuildFile; fileRef = 187651391C7EF09000E4E269 /* OSCBlog.m */; settings = {ASSET_TAGS = (); }; };
+		1890AE531C83DBEE00047637 /* OptionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890AE521C83DBEE00047637 /* OptionButton.m */; settings = {ASSET_TAGS = (); }; };
+		1890AE561C83F0C000047637 /* Homepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1890AE551C83F0C000047637 /* Homepage.storyboard */; settings = {ASSET_TAGS = (); }; };
+		1890AE591C83F0F300047637 /* HomepageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890AE581C83F0F300047637 /* HomepageViewController.m */; settings = {ASSET_TAGS = (); }; };
+		1890AE5C1C83F10B00047637 /* MyBasicInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890AE5B1C83F10B00047637 /* MyBasicInfoViewController.m */; settings = {ASSET_TAGS = (); }; };
+		1890AE5F1C83F15000047637 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1890AE5E1C83F15000047637 /* Discover.storyboard */; settings = {ASSET_TAGS = (); }; };
+		1890AE621C83F16700047637 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890AE611C83F16700047637 /* DiscoverViewController.m */; settings = {ASSET_TAGS = (); }; };
+		1890AE661C841FB300047637 /* UIScrollView+ScalableCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890AE651C841FB300047637 /* UIScrollView+ScalableCover.m */; settings = {ASSET_TAGS = (); }; };
+		1890AE691C84217A00047637 /* OSCMyInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890AE681C84217A00047637 /* OSCMyInfo.m */; settings = {ASSET_TAGS = (); }; };
 		18C11D081C7BF259001D2706 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C11D071C7BF259001D2706 /* main.m */; };
 		18C11D0B1C7BF259001D2706 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C11D0A1C7BF259001D2706 /* AppDelegate.m */; };
 		18C11D111C7BF259001D2706 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C11D0F1C7BF259001D2706 /* Main.storyboard */; };
@@ -718,6 +726,20 @@
 		187651351C7EEDE800E4E269 /* BlogCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogCell.m; sourceTree = "<group>"; };
 		187651381C7EF09000E4E269 /* OSCBlog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCBlog.h; sourceTree = "<group>"; };
 		187651391C7EF09000E4E269 /* OSCBlog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCBlog.m; sourceTree = "<group>"; };
+		1890AE511C83DBEE00047637 /* OptionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionButton.h; sourceTree = "<group>"; };
+		1890AE521C83DBEE00047637 /* OptionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionButton.m; sourceTree = "<group>"; };
+		1890AE551C83F0C000047637 /* Homepage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Homepage.storyboard; sourceTree = "<group>"; };
+		1890AE571C83F0F300047637 /* HomepageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomepageViewController.h; sourceTree = "<group>"; };
+		1890AE581C83F0F300047637 /* HomepageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomepageViewController.m; sourceTree = "<group>"; };
+		1890AE5A1C83F10B00047637 /* MyBasicInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBasicInfoViewController.h; sourceTree = "<group>"; };
+		1890AE5B1C83F10B00047637 /* MyBasicInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBasicInfoViewController.m; sourceTree = "<group>"; };
+		1890AE5E1C83F15000047637 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
+		1890AE601C83F16700047637 /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		1890AE611C83F16700047637 /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		1890AE641C841FB300047637 /* UIScrollView+ScalableCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ScalableCover.h"; sourceTree = "<group>"; };
+		1890AE651C841FB300047637 /* UIScrollView+ScalableCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ScalableCover.m"; sourceTree = "<group>"; };
+		1890AE671C84217A00047637 /* OSCMyInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCMyInfo.h; sourceTree = "<group>"; };
+		1890AE681C84217A00047637 /* OSCMyInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCMyInfo.m; sourceTree = "<group>"; };
 		18C11D031C7BF259001D2706 /* OSChina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSChina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C11D071C7BF259001D2706 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18C11D091C7BF259001D2706 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -777,6 +799,7 @@
 		182C78841C7BFFB200FD2B63 /* Catagory */ = {
 			isa = PBXGroup;
 			children = (
+				1890AE631C841F9700047637 /* ScalableCover */,
 				18F02AF01C8028D50080AE1F /* FontAwesome */,
 				182C78851C7BFFCC00FD2B63 /* UIColor+Util.h */,
 				182C78861C7BFFCC00FD2B63 /* UIColor+Util.m */,
@@ -819,6 +842,8 @@
 			children = (
 				182C78971C7C0E5200FD2B63 /* OSCTabBarController.h */,
 				182C78981C7C0E5200FD2B63 /* OSCTabBarController.m */,
+				1890AE511C83DBEE00047637 /* OptionButton.h */,
+				1890AE521C83DBEE00047637 /* OptionButton.m */,
 			);
 			path = "Tab Bar";
 			sourceTree = "<group>";
@@ -876,6 +901,8 @@
 				18F02AEB1C7FF6800080AE1F /* OSCTweet.m */,
 				18F02AED1C7FF9D30080AE1F /* OSCUser.h */,
 				18F02AEE1C7FF9D30080AE1F /* OSCUser.m */,
+				1890AE671C84217A00047637 /* OSCMyInfo.h */,
+				1890AE681C84217A00047637 /* OSCMyInfo.m */,
 			);
 			path = OSC;
 			sourceTree = "<group>";
@@ -886,6 +913,7 @@
 				18764EA81C7D83E200E4E269 /* Login.storyboard */,
 				18764EAA1C7D840300E4E269 /* LoginViewController.h */,
 				18764EAB1C7D840300E4E269 /* LoginViewController.m */,
+				1890AE541C83F09C00047637 /* 我 */,
 			);
 			path = "用户";
 			sourceTree = "<group>";
@@ -1358,6 +1386,37 @@
 			path = Blog;
 			sourceTree = "<group>";
 		};
+		1890AE541C83F09C00047637 /* 我 */ = {
+			isa = PBXGroup;
+			children = (
+				1890AE551C83F0C000047637 /* Homepage.storyboard */,
+				1890AE571C83F0F300047637 /* HomepageViewController.h */,
+				1890AE581C83F0F300047637 /* HomepageViewController.m */,
+				1890AE5A1C83F10B00047637 /* MyBasicInfoViewController.h */,
+				1890AE5B1C83F10B00047637 /* MyBasicInfoViewController.m */,
+			);
+			path = "我";
+			sourceTree = "<group>";
+		};
+		1890AE5D1C83F13900047637 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				1890AE5E1C83F15000047637 /* Discover.storyboard */,
+				1890AE601C83F16700047637 /* DiscoverViewController.h */,
+				1890AE611C83F16700047637 /* DiscoverViewController.m */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		1890AE631C841F9700047637 /* ScalableCover */ = {
+			isa = PBXGroup;
+			children = (
+				1890AE641C841FB300047637 /* UIScrollView+ScalableCover.h */,
+				1890AE651C841FB300047637 /* UIScrollView+ScalableCover.m */,
+			);
+			path = ScalableCover;
+			sourceTree = "<group>";
+		};
 		18C11CFA1C7BF259001D2706 = {
 			isa = PBXGroup;
 			children = (
@@ -1386,6 +1445,7 @@
 				18C11D121C7BF259001D2706 /* Assets.xcassets */,
 				18C11D141C7BF259001D2706 /* LaunchScreen.storyboard */,
 				18C11D171C7BF259001D2706 /* Info.plist */,
+				1890AE5D1C83F13900047637 /* Discover */,
 				18F02AD91C7FDEF20080AE1F /* 动弹 */,
 				18F02AD81C7FDE9B0080AE1F /* 新闻 */,
 				187651301C7EEDB300E4E269 /* 博客 */,
@@ -1624,6 +1684,7 @@
 				187650E71C7EAACF00E4E269 /* tabbar-tweet@2x.png in Resources */,
 				187650101C7EAACF00E4E269 /* 002@2x.png in Resources */,
 				1876507A1C7EAACF00E4E269 /* feelsgood@2x.png in Resources */,
+				1890AE561C83F0C000047637 /* Homepage.storyboard in Resources */,
 				1876503A1C7EAACF00E4E269 /* 044@2x.png in Resources */,
 				18C11D161C7BF259001D2706 /* LaunchScreen.storyboard in Resources */,
 				1876511A1C7EAACF00E4E269 /* widget_original_icon.png in Resources */,
@@ -1694,6 +1755,7 @@
 				187650F41C7EAACF00E4E269 /* toolbar-emoji2@3x.png in Resources */,
 				187650B31C7EAACF00E4E269 /* me-message@2x.png in Resources */,
 				187651111C7EAACF00E4E269 /* userinfo_icon_female.png in Resources */,
+				1890AE5F1C83F15000047637 /* Discover.storyboard in Resources */,
 				187650151C7EAACF00E4E269 /* 007@2x.png in Resources */,
 				187650661C7EAACF00E4E269 /* 088@2x.png in Resources */,
 				187651181C7EAACF00E4E269 /* voice_pause.png in Resources */,
@@ -1905,6 +1967,7 @@
 				18F02AE01C7FE69D0080AE1F /* OSCNews.m in Sources */,
 				18764EAC1C7D840300E4E269 /* LoginViewController.m in Sources */,
 				182C78B71C7C522C00FD2B63 /* UIImageView+Util.m in Sources */,
+				1890AE591C83F0F300047637 /* HomepageViewController.m in Sources */,
 				182C789D1C7C37E900FD2B63 /* OSCObjsViewController.m in Sources */,
 				182C78B41C7C51D400FD2B63 /* Utils.m in Sources */,
 				18764EB01C7DB0D100E4E269 /* PostsViewController.m in Sources */,
@@ -1913,14 +1976,19 @@
 				1876513A1C7EF09000E4E269 /* OSCBlog.m in Sources */,
 				1876512F1C7EE80D00E4E269 /* SoftwareCell.m in Sources */,
 				182C788A1C7C00A700FD2B63 /* Config.m in Sources */,
+				1890AE691C84217A00047637 /* OSCMyInfo.m in Sources */,
 				18F02AF61C80295D0080AE1F /* NSString+FontAwesome.m in Sources */,
 				182C78931C7C0DB400FD2B63 /* RootViewController.m in Sources */,
 				182C78AC1C7C3A0000FD2B63 /* LastCell.m in Sources */,
 				18C11D0B1C7BF259001D2706 /* AppDelegate.m in Sources */,
 				18F02AEF1C7FF9D30080AE1F /* OSCUser.m in Sources */,
+				1890AE531C83DBEE00047637 /* OptionButton.m in Sources */,
 				187651361C7EEDE800E4E269 /* BlogCell.m in Sources */,
 				18C11D081C7BF259001D2706 /* main.m in Sources */,
+				1890AE661C841FB300047637 /* UIScrollView+ScalableCover.m in Sources */,
+				1890AE621C83F16700047637 /* DiscoverViewController.m in Sources */,
 				18F02AE31C7FEC1F0080AE1F /* NewsCell.m in Sources */,
+				1890AE5C1C83F10B00047637 /* MyBasicInfoViewController.m in Sources */,
 				182C78A41C7C385F00FD2B63 /* HorizonalTableViewController.m in Sources */,
 				182C78991C7C0E5200FD2B63 /* OSCTabBarController.m in Sources */,
 				182C78A11C7C384100FD2B63 /* TitleBarView.m in Sources */,
