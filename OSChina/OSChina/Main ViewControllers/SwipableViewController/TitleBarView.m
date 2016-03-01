@@ -26,6 +26,7 @@
             UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
             button.titleLabel.font = [UIFont systemFontOfSize:15];
             button.backgroundColor = [UIColor titleBarColor];
+            [button setTitle:title forState:UIControlStateNormal];
             [button setTitleColor:[UIColor colorWithHex:0x909090] forState:UIControlStateNormal];
             button.frame = CGRectMake(buttonWidth * idx, 0, buttonWidth, buttonHeight);
             button.tag = idx;

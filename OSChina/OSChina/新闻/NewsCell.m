@@ -9,6 +9,10 @@
 #import "NewsCell.h"
 #import "UIColor+Util.h"
 
+@interface NewsCell()
+@property (nonatomic, assign) BOOL didSetupConstraints;
+@end
+
 @implementation NewsCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
@@ -17,7 +21,7 @@
     if (self) {
         self.contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         [self initSubviews];
-        [self setLayout];
+//        [self setupLayout];
     }
     return self;
 }
@@ -58,11 +62,11 @@
 
 }
 
-- (void)setLayout {
 
+- (void)setupLayout {
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.contentView.mas_left).offset(8);
-        make.right.equalTo(self.contentView.mas_right).offset(8);
+        make.right.equalTo(self.contentView.mas_right).offset(-8);
         make.top.equalTo(self.contentView.mas_top).offset(8);
     }];
     
@@ -74,7 +78,7 @@
     [self.authorLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.bodyLabel.mas_left);
         make.top.equalTo(self.bodyLabel.mas_bottom).offset(5);
-        make.bottom.equalTo(self.contentView.mas_bottom).offset(8);
+        make.bottom.equalTo(self.contentView.mas_bottom).offset(-8);
     }];
     
     [self.timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -86,19 +90,44 @@
         make.left.equalTo(self.timeLabel.mas_right).offset(5);
         make.centerY.equalTo(self.timeLabel.mas_centerY);
     }];
-}
-
-
-- (void)layoutSubviews {
-
-    [super layoutSubviews];
-    self.titleLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.titleLabel.frame);
-    self.bodyLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.bodyLabel.frame);
-    self.authorLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.authorLabel.frame);
-    self.timeLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.timeLabel.frame);
-    self.commentCount.preferredMaxLayoutWidth = CGRectGetWidth(self.commentCount.frame);
-    [super layoutSubviews];
 
 }
+
+- (void)updateConstraints {
+    
+    if (!self.didSetupConstraints) {
+        
+        [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.contentView.mas_left).offset(8);
+            make.right.equalTo(self.contentView.mas_right).offset(-8);
+            make.top.equalTo(self.contentView.mas_top).offset(8);
+        }];
+        
+        [self.bodyLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.titleLabel.mas_bottom).offset(5);
+            make.left.right.equalTo(self.titleLabel);
+        }];
+        
+        [self.authorLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.bodyLabel.mas_left);
+            make.top.equalTo(self.bodyLabel.mas_bottom).offset(5);
+            make.bottom.equalTo(self.contentView.mas_bottom).offset(-8);
+        }];
+        
+        [self.timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.authorLabel.mas_right).offset(5);
+            make.centerY.equalTo(self.authorLabel.mas_centerY);
+        }];
+        
+        [self.commentCount mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.timeLabel.mas_right).offset(5);
+            make.centerY.equalTo(self.timeLabel.mas_centerY);
+        }];
+        self.didSetupConstraints = YES;
+    }
+    
+    [super updateConstraints];
+}
+
 
 @end

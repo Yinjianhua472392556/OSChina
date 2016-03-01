@@ -63,6 +63,8 @@ static NSString *kNewsCellID = @"NewsCell";
 
     [super viewDidLoad];
     [self.tableView registerClass:[NewsCell class] forCellReuseIdentifier:kNewsCellID];
+    self.tableView.estimatedRowHeight = UITableViewAutomaticDimension;
+
 }
 
 #pragma mark - Table view data source
@@ -81,6 +83,10 @@ static NSString *kNewsCellID = @"NewsCell";
     
     cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];
     cell.selectedBackgroundView.backgroundColor = [UIColor selectCellSColor];
+    
+    [cell setNeedsUpdateConstraints];
+    [cell updateConstraintsIfNeeded];
+    
     return cell;
 }
 
@@ -93,7 +99,6 @@ static NSString *kNewsCellID = @"NewsCell";
         [self.offscreenCells setObject:cell forKey:kNewsCellID];
     }
     
-    
     cell.titleLabel.attributedText = news.attributedTittle;
     cell.bodyLabel.text = news.body;
     cell.authorLabel.text = news.author;
@@ -101,11 +106,14 @@ static NSString *kNewsCellID = @"NewsCell";
     cell.timeLabel.attributedText = [Utils attributedTimeString:news.pubDate];
     cell.commentCount.attributedText = news.attributedCommentCount;
 
-    [cell setNeedsLayout];
-    [cell layoutIfNeeded];
+    [cell setNeedsUpdateConstraints];
+    [cell updateConstraintsIfNeeded];
+
+
     CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
     height += 10;
     return height;
+
 }
 
 

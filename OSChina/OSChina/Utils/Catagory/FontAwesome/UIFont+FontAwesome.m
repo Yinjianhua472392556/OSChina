@@ -13,7 +13,7 @@
 
 + (UIFont *)fontAwesomeFontOfSize:(CGFloat)size {
     UIFont *font = [UIFont fontWithName:kFontAwesomeFamilyName size:size];
-    NSAssert(font != nil, @"%@ couldn't be loaded",kFontAwesomeFamilyName);
+//    NSAssert(font != nil, @"%@ couldn't be loaded",kFontAwesomeFamilyName);
     return font;
 }
 

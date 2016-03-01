@@ -32,7 +32,7 @@
 + (NSAttributedString *)attributedCommentCount:(int)commentCount {
 
     NSString *rawString = [NSString stringWithFormat:@"%@ %d", [NSString fontAwesomeIconStringForEnum:FACommentsO], commentCount];
-    NSAttributedString *attributedCommentCount = [[NSAttributedString alloc] initWithString:rawString attributes:@{NSFontAttributeName : [UIFont fontAwesomeFontOfSize:12]}];
+    NSAttributedString *attributedCommentCount = [[NSAttributedString alloc] initWithString:rawString attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:12]}];
     return attributedCommentCount;
 }
 
@@ -100,7 +100,7 @@
 + (NSAttributedString *)attributedTimeString:(NSString *)dateStr {
 
     NSString *rawString = [NSString stringWithFormat:@"%@ %@",[NSString fontAwesomeIconStringForEnum:FAClockO], [self intervalSinceNow:dateStr]];
-    NSAttributedString *attributedTime = [[NSAttributedString alloc] initWithString:rawString attributes:@{NSFontAttributeName : [UIFont fontAwesomeFontOfSize:12]}];
+    NSAttributedString *attributedTime = [[NSAttributedString alloc] initWithString:rawString attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:12]}];
     return attributedTime;
 }
 
@@ -161,7 +161,7 @@
     NSMutableAttributedString *attributedClientString;
     if (clientType > 1 && clientType <=6) {
         NSArray *clients = @[@"", @"", @"手机", @"Android", @"iPhone", @"Windows Phone", @"微信"];
-        attributedClientString = [[NSMutableAttributedString alloc] initWithString:[NSString fontAwesomeIconStringForEnum:FAMobile] attributes:@{NSFontAttributeName : [UIFont fontAwesomeFontOfSize:13]}];
+        attributedClientString = [[NSMutableAttributedString alloc] initWithString:[NSString fontAwesomeIconStringForEnum:FAMobile] attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:13]}];
         [attributedClientString appendAttributedString:[[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@" %@",clients[clientType]]]];
     }else {
     
