@@ -162,7 +162,6 @@
         optionButton.tag = i;
         optionButton.userInteractionEnabled = YES;
         [optionButton addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTapOptionButton:)]];
-        
         [self.view addSubview:optionButton];
         [_opitionButtons addObject:optionButton];
     }

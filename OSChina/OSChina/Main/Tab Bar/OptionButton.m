@@ -26,7 +26,6 @@
         
         _image = [UIImageView new];
         _image.image = image;
-//        _image.translatesAutoresizingMaskIntoConstraints = NO;
         [_button addSubview:_image];
         
         _titleLabel = [UILabel new];
@@ -45,18 +44,19 @@
 - (void)setLayout {
 
     [_button mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.equalTo(self).offset(8);
+        make.left.equalTo(self).offset(8);
+        make.right.equalTo(self).offset(-8);
         make.top.equalTo(self).offset(8);
     }];
     
     [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.button.mas_bottom).offset(8);
-        make.bottom.equalTo(self).offset(8);
+        make.bottom.equalTo(self).offset(-8);
         make.centerX.equalTo(self.button);
     }];
     
     [_image mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.top.bottom.equalTo(self.button).offset(15);
+        make.edges.insets(UIEdgeInsetsMake(15, 15, 15, 15));
     }];
 }
 
