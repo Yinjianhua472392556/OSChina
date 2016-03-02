@@ -24,7 +24,7 @@
 		182C78BA1C7C52AC00FD2B63 /* UIImage+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C78B91C7C52AC00FD2B63 /* UIImage+Util.m */; settings = {ASSET_TAGS = (); }; };
 		182C78BD1C7C545C00FD2B63 /* NSTextAttachment+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C78BC1C7C545C00FD2B63 /* NSTextAttachment+Util.m */; settings = {ASSET_TAGS = (); }; };
 		182C78C01C7C54DD00FD2B63 /* AFHTTPRequestOperationManager+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C78BF1C7C54DD00FD2B63 /* AFHTTPRequestOperationManager+Util.m */; settings = {ASSET_TAGS = (); }; };
-		184A57221C86D2DC00728E8C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184A57211C86D2DC00728E8C /* Security.framework */; };
+		184A57361C86D9C300728E8C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184A57211C86D2DC00728E8C /* Security.framework */; };
 		18764EA91C7D83E200E4E269 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18764EA81C7D83E200E4E269 /* Login.storyboard */; settings = {ASSET_TAGS = (); }; };
 		18764EAC1C7D840300E4E269 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18764EAB1C7D840300E4E269 /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
 		18764EB01C7DB0D100E4E269 /* PostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18764EAF1C7DB0D100E4E269 /* PostsViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -784,7 +784,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				184A57221C86D2DC00728E8C /* Security.framework in Frameworks */,
+				184A57361C86D9C300728E8C /* Security.framework in Frameworks */,
 				D742019AFB9328ED87342F73 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

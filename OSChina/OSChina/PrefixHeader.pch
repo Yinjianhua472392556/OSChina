@@ -11,10 +11,10 @@
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
-#import "AFNetworking.h"
-#import "Masonry.h"
+#import <AFNetworking/AFNetworking.h>
+#import <Masonry/Masonry.h>
 #import "OSCAPI.h"
-#import "MBProgressHUD.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 //define this constant if you want to use Masonry without the 'mas_' prefix
 #define MAS_SHORTHAND

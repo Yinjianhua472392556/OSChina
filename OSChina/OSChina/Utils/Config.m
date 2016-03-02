@@ -8,7 +8,7 @@
 
 #import "Config.h"
 #import "OSCMyInfo.h"
-//#import "SSKeychain.h"
+#import <SSKeychain/SSKeychain.h>
 
 NSString * const kService = @"OSChina";
 NSString * const kAccount = @"account";
@@ -126,22 +126,22 @@ NSString * const kTeamsArray = @"teams";
 
 + (NSArray *)getOwnAccountAndPassword {
 
-//    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-//    NSString *account = [userDefaults objectForKey:kAccount];
-//    NSString *password = [SSKeychain passwordForService:kService account:account];
-//    if (account) {
-//        return @[account, password];
-//    }
-//    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *account = [userDefaults objectForKey:kAccount];
+    NSString *password = [SSKeychain passwordForService:kService account:account];
+    if (account) {
+        return @[account, password];
+    }
+    
     return nil;
 }
 
 + (void)saveOwnAccount:(NSString *)account andPassword:(NSString *)password {
 
-//    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-//    [userDefaults setObject:account forKey:kAccount];
-//    [userDefaults synchronize];
-//    [SSKeychain setPassword:password forService:kService account:account];
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject:account forKey:kAccount];
+    [userDefaults synchronize];
+    [SSKeychain setPassword:password forService:kService account:account];
 }
 
 @end
