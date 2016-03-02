@@ -25,7 +25,7 @@
         <!--登录-->
         <scene sceneID="QX6-d0-aTM">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" automaticallyAdjustsScrollViewInsets="NO" id="nC3-92-Toe" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="nC3-92-Toe" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="55Z-1M-aQx"/>
                         <viewControllerLayoutGuide type="bottom" id="1mx-gV-EP3"/>

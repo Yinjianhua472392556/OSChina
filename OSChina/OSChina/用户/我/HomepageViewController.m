@@ -57,6 +57,14 @@
     self.tableView.separatorColor = [UIColor separatorColor];
     [self.refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
     [self setUpSubviews];
+    
+    _myID = [Config getOwnID];
+    [self refreshHeaderView];
+    [self refresh];
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)dawnAndNightMode {
@@ -128,6 +136,7 @@
     [_fanButton addTarget:self action:@selector(pushFriendsSVC:) forControlEvents:UIControlEventTouchUpInside];
 
     [_portrait setBorderWidth:2.0 andColor:[UIColor whiteColor]];
+    _portrait.userInteractionEnabled = YES;
     [_portrait addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapPortrait)]];
     [self setCoverImage];
     self.refreshControl.tintColor = [UIColor refreshControlColor];
