@@ -127,6 +127,7 @@ static NSString * const kTweetCellID = @"TweetCell";
 
     [super viewDidLoad];
     [self.tableView registerClass:[TweetCell class] forCellReuseIdentifier:kTweetCellID];
+    self.tableView.estimatedRowHeight = UITableViewAutomaticDimension;
 }
 
 - (void)dealloc {
@@ -147,20 +148,8 @@ static NSString * const kTweetCellID = @"TweetCell";
     [cell setContentWithTweet:tweet];
     if (tweet.hasAnImage) {
         cell.thumbnail.hidden = NO;
-#if 0
-        UIImage *image = [[SDImageCache sharedImageCache] imageFromMemoryCacheForKey:tweet.smallImgURL.absoluteString];
-        // 有图就加载，无图则下载并reload tableview
-        if (!image) {
-            [cell.thumbnail setImage:[UIImage imageNamed:@"loading"]];
-            [self downloadImageThenReload:tweet.smallImgURL];
-        }else {
-            [cell.thumbnail setImage:image];
-        }
-
-#else
         [cell.thumbnail sd_setImageWithURL:tweet.smallImgURL placeholderImage:[UIImage imageNamed:@"loading"]];
-        
-#endif
+
     }else {
         cell.thumbnail.hidden = YES;
     }
@@ -173,12 +162,15 @@ static NSString * const kTweetCellID = @"TweetCell";
     cell.contentLabel.textColor = [UIColor contentTextColor];
     cell.authorLabel.textColor = [UIColor nameColor];
     
-    [cell.portrait addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushUserDetailsView:)]];
-    [cell.thumbnail addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(loadLargeImage:)]];
-    [cell.likeButton addTarget:self action:@selector(togglePraise:) forControlEvents:UIControlEventTouchUpInside];
-    [cell.likeListLabel addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(PushToLikeList:)]];
+//    [cell.portrait addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushUserDetailsView:)]];
+//    [cell.thumbnail addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(loadLargeImage:)]];
+//    [cell.likeButton addTarget:self action:@selector(togglePraise:) forControlEvents:UIControlEventTouchUpInside];
+//    [cell.likeListLabel addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(PushToLikeList:)]];
     cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];
     cell.selectedBackgroundView.backgroundColor = [UIColor selectCellSColor];
+    
+    [cell setNeedsUpdateConstraints];
+    [cell updateConstraintsIfNeeded];
     
     return cell;
     
@@ -186,27 +178,55 @@ static NSString * const kTweetCellID = @"TweetCell";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 
+//    OSCTweet *tweet = self.objects[indexPath.row];
+//    if (tweet.cellHeight) {
+//        return tweet.cellHeight;
+//    }
+//    
+//    TweetCell *cell = [self.offscreenCells objectForKey:kTweetCellID];
+//    if (!cell) {
+//        cell = [[TweetCell alloc] init];
+//        [self.offscreenCells setValue:cell forKey:kTweetCellID];
+//    }
+//    
+//    [cell setContentWithTweet:tweet];
+//    
+//    [cell setNeedsUpdateConstraints];
+//    [cell updateConstraintsIfNeeded];
+//    
+//    CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+//    if (tweet.hasAnImage) {
+//        height += 86;
+//    }
+//    height += 10;
+//    tweet.cellHeight = height;
+//    return tweet.cellHeight;
+    
     OSCTweet *tweet = self.objects[indexPath.row];
-    if (tweet.cellHeight) {
-        return tweet.cellHeight;
+    
+    if (tweet.cellHeight) {return tweet.cellHeight;}
+    
+    self.label.font = [UIFont boldSystemFontOfSize:14];
+    [self.label setText:tweet.author];
+    CGFloat height = [self.label sizeThatFits:CGSizeMake(tableView.frame.size.width - 60, MAXFLOAT)].height;
+    
+    self.label.font = [UIFont boldSystemFontOfSize:15];
+    [self.label setAttributedText:[Utils emojiStringFromRawString:tweet.body]];
+    height += [self.label sizeThatFits:CGSizeMake(tableView.frame.size.width - 60, MAXFLOAT)].height;
+    
+    if (tweet.likeCount) {
+        [self.label setAttributedText:tweet.likersString];
+        self.label.font = [UIFont systemFontOfSize:12];
+        height += [self.label sizeThatFits:CGSizeMake(tableView.frame.size.width - 60, MAXFLOAT)].height + 6;
     }
     
-    TweetCell *cell = [self.offscreenCells objectForKey:kTweetCellID];
-    if (!cell) {
-        cell = [[TweetCell alloc] init];
-        [self.offscreenCells setValue:cell forKey:kTweetCellID];
-    }
-    
-    [cell setContentWithTweet:tweet];
-    [cell setNeedsLayout];
-    [cell layoutIfNeeded];
-    CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
     if (tweet.hasAnImage) {
         height += 86;
     }
-    height += 10;
-    tweet.cellHeight = height;
+    tweet.cellHeight = height + 39;
+    
     return tweet.cellHeight;
+
 }
 
 

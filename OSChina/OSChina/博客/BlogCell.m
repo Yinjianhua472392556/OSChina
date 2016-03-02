@@ -9,6 +9,10 @@
 #import "BlogCell.h"
 #import "UIColor+Util.h"
 
+@interface BlogCell()
+@property (nonatomic, assign) BOOL didSetupConstraints;
+@end
+
 @implementation BlogCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
@@ -18,7 +22,7 @@
         self.contentView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         self.backgroundColor = [UIColor themeColor];
         [self initSubviews];
-        [self setLayout];
+//        [self setLayout];
     }
     return self;
 }
@@ -59,7 +63,7 @@
 
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.contentView.mas_left).offset(8);
-        make.right.equalTo(self.contentView.mas_right).offset(8);
+        make.right.equalTo(self.contentView.mas_right).offset(-8);
         make.top.equalTo(self.contentView.mas_top).offset(8);
     }];
     
@@ -71,6 +75,7 @@
     [self.authorLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.bodyLabel.mas_left);
         make.top.equalTo(self.bodyLabel.mas_bottom).offset(5);
+        make.bottom.equalTo(self.contentView.mas_bottom).offset(-8);
     }];
     
     [self.timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -84,11 +89,42 @@
     }];
 }
 
-- (void)layoutSubviews {
 
-    [super layoutSubviews];
-    self.titleLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.titleLabel.frame);
-    self.bodyLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.bodyLabel.frame);
-    [super layoutSubviews];
+- (void)updateConstraints {
+
+    if (!self.didSetupConstraints) {
+        
+        [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.contentView.mas_left).offset(8);
+            make.right.equalTo(self.contentView.mas_right).offset(-8);
+            make.top.equalTo(self.contentView.mas_top).offset(8);
+        }];
+        
+        [self.bodyLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.right.equalTo(self.titleLabel);
+            make.top.equalTo(self.titleLabel.mas_bottom).offset(5);
+        }];
+        
+        [self.authorLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.bodyLabel.mas_left);
+            make.top.equalTo(self.bodyLabel.mas_bottom).offset(5);
+            make.bottom.equalTo(self.contentView.mas_bottom).offset(-8);
+        }];
+        
+        [self.timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.authorLabel.mas_right).offset(5);
+            make.centerY.equalTo(self.authorLabel.mas_centerY);
+        }];
+        
+        [self.commentCount mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.timeLabel.mas_right).offset(5);
+            make.centerY.equalTo(self.authorLabel.mas_centerY);
+        }];
+
+        self.didSetupConstraints = YES;
+    }
+    
+    [super updateConstraints];
 }
+
 @end

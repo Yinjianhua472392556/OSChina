@@ -107,7 +107,7 @@ static NSString * const kUser = @"user";
                 OSCUser *user = _likeList[names];
                 [_likersString appendAttributedString:[[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@,",user.name]]];
             }
-            [_likersString deleteCharactersInRange:NSMakeRange(_likersString.length - 1, 1)];
+//            [_likersString deleteCharactersInRange:NSMakeRange(_likersString.length - 1, 1)];
             //设置颜色
 
             [_likersString addAttribute:NSForegroundColorAttributeName value:[UIColor nameColor] range:NSMakeRange(0, _likersString.length)];

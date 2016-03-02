@@ -77,7 +77,13 @@ static NSString *kBlogCellID = @"BlogCell";
     
     cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];
     cell.selectedBackgroundView.backgroundColor = [UIColor selectCellSColor];
-    return cell;
+    
+
+    
+    [cell setNeedsUpdateConstraints];
+    [cell updateConstraintsIfNeeded];
+    
+     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -97,10 +103,11 @@ static NSString *kBlogCellID = @"BlogCell";
     cell.timeLabel.attributedText = [Utils attributedTimeString:blog.pubDate];
     cell.commentCount.attributedText = blog.attributedCommentCount;
     
-    [cell setNeedsLayout];
-    [cell layoutIfNeeded];
-    CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
-    height += 10;
+    [cell setNeedsUpdateConstraints];
+    [cell updateConstraintsIfNeeded];
+    
+     CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    height += 15;
     return height;
 }
 

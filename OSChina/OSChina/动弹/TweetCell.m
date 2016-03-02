@@ -15,13 +15,18 @@
 #import "UIImageView+Util.h"
 #import "Utils.h"
 
+
+@interface TweetCell()
+@property (nonatomic, assign) BOOL didSetupConstraints;
+@end
+
 @implementation TweetCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
 
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        self.contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+//        self.contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         self.backgroundColor = [UIColor themeColor];
         
         _thumbnailConstraints = [NSArray new];
@@ -31,7 +36,7 @@
         [self setSelectedBackgroundView:selectedBackground];
         
         [self initSubviews];
-        [self setLayout];
+//        [self setLayout];
     }
     return self;
 }
@@ -78,6 +83,7 @@
     _thumbnail.contentMode = UIViewContentModeScaleAspectFill;
     _thumbnail.clipsToBounds = YES;
     _thumbnail.userInteractionEnabled = YES;
+    _thumbnail.backgroundColor = [UIColor cyanColor];
     [self.contentView addSubview:_thumbnail];
 
     //点赞列表
@@ -90,68 +96,99 @@
     [self.contentView addSubview:_likeListLabel];
 }
 
-- (void)setLayout {
 
-    [self.portrait mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.height.equalTo(@(36));
-        make.top.equalTo(self.contentView.mas_top).offset(8);
-        make.left.equalTo(self.contentView.mas_left).offset(8);
-    }];
+- (void)setLayout
+{
+    for (UIView *view in self.contentView.subviews) {view.translatesAutoresizingMaskIntoConstraints = NO;}
     
-    [self.authorLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.portrait.mas_right).offset(8);
-        make.top.equalTo(self.portrait.mas_top);
-        make.right.equalTo(self.contentView.mas_right).offset(8);
-    }];
+    NSDictionary *views = NSDictionaryOfVariableBindings(_portrait, _authorLabel, _timeLabel, _appclientLabel, _contentLabel, _likeButton, _commentCount, _likeListLabel, _thumbnail);
     
-    [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.authorLabel.mas_left);
-        make.top.equalTo(self.authorLabel.mas_bottom).offset(5);
-        make.right.equalTo(self.authorLabel.mas_right);
-    }];
     
-    [self.thumbnail mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.height.equalTo(@(80));
-        make.left.equalTo(self.authorLabel.mas_left);
-        make.top.lessThanOrEqualTo(self.contentLabel.mas_bottom).offset(6);
-    }];
+    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-8-[_portrait(36)]" options:0 metrics:nil views:views]];
     
-    [self.likeListLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.authorLabel.mas_left);
-        make.top.lessThanOrEqualTo(self.thumbnail.mas_bottom).offset(6);
-        make.right.equalTo(self.authorLabel.mas_right);
-    }];
+    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-8-[_portrait(36)]-8-[_authorLabel]-8-|"
+                                                                             options:0 metrics:nil views:views]];
     
-    [self.timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.authorLabel.mas_left);
-        make.top.equalTo(self.likeListLabel.mas_bottom).offset(6);
-    }];
+    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-7-[_authorLabel]-5-[_contentLabel]-<=6-[_thumbnail(80)]-<=6-[_likeListLabel]-6-[_timeLabel]-5-|"
+                                                                             options:NSLayoutFormatAlignAllLeft
+                                                                             metrics:nil views:views]];
     
-    [self.appclientLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.timeLabel.mas_right).offset(10);
-        make.centerY.equalTo(self.timeLabel.mas_centerY);
-    }];
+    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"[_thumbnail(80)]"
+                                                                             options:0 metrics:nil views:views]];
     
-    [self.likeButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.height.equalTo(@(30));
-        make.left.mas_greaterThanOrEqualTo(self.appclientLabel.mas_right).offset(5);
-        make.centerY.equalTo(self.timeLabel.mas_centerY);
-    }];
+    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"[_timeLabel]-10-[_appclientLabel]->=5-[_likeButton(30)]-5-[_commentCount]-8-|"
+                                                                             options:NSLayoutFormatAlignAllCenterY metrics:nil views:views]];
     
-    [self.commentCount mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.timeLabel.mas_centerY);
-        make.left.equalTo(self.likeButton.mas_right).offset(5);
-    }];
+    [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"[_likeListLabel]-8-|" options:0 metrics:nil views:views]];
+    
+    [self.contentView addConstraint:[NSLayoutConstraint constraintWithItem:_authorLabel  attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual
+                                                                    toItem:_contentLabel attribute:NSLayoutAttributeRight multiplier:1.0 constant:0]];
 }
 
-- (void)layoutSubviews {
+- (void)updateConstraints {
 
-    [super layoutSubviews];
-    self.contentLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.contentLabel.frame);
-    self.likeListLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.likeListLabel.frame);
-    [super layoutSubviews];
-    
+    if (!self.didSetupConstraints) {
+        
+        [_portrait mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.contentView.mas_left).offset(8);
+            make.top.equalTo(self.contentView.mas_top).offset(8);
+            make.width.with.height.equalTo(@(36));
+        }];
+     
+        [_authorLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(_portrait.mas_right).offset(8);
+            make.right.equalTo(self.contentView.mas_right).offset(-8);
+            make.top.equalTo(self.contentView.mas_top).offset(7);
+        }];
+        
+        [_contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(_authorLabel.mas_left);
+            make.top.equalTo(_authorLabel.mas_bottom).offset(5);
+            make.right.equalTo(_authorLabel.mas_right);
+        }];
+        
+        [_thumbnail mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(_authorLabel.mas_left);
+            make.top.lessThanOrEqualTo(_contentLabel.mas_bottom).offset(6);
+//            make.top.equalTo(_contentLabel.mas_bottom).offset(6);
+            make.width.height.equalTo(@(80));
+        }];
+        [_likeListLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(_authorLabel.mas_left);
+            make.top.lessThanOrEqualTo(_thumbnail.mas_bottom).offset(6);
+//            make.top.equalTo(_thumbnail.mas_bottom).offset(6);
+            make.right.equalTo(self.contentView.mas_right).offset(8);
+        }];
+        
+        [_timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(_authorLabel.mas_left);
+            make.top.equalTo(_likeListLabel.mas_bottom).offset(6);
+            make.bottom.equalTo(self.contentView.mas_bottom).offset(-5);
+            
+            make.centerY.equalTo(@[_appclientLabel.mas_centerY, _likeButton.mas_centerY,_commentCount.mas_centerY]);
+        }];
+        
+        [_appclientLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(_timeLabel.mas_right).offset(10);
+        }];
+        
+        [_likeButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_greaterThanOrEqualTo(_appclientLabel.mas_right).offset(5);
+//            make.left.equalTo(_appclientLabel.mas_left).offset(5);
+            make.width.equalTo(@(30));
+        }];
+        
+        [_commentCount mas_makeConstraints:^(MASConstraintMaker *make) {
+           
+            make.left.equalTo(_likeButton.mas_right).offset(5);
+            make.right.equalTo(self.contentView.mas_right).offset(-8);
+        }];
+        
+        self.didSetupConstraints = YES;
+    }
+    [super updateConstraints];
 }
+
 
 - (void)setContentWithTweet:(OSCTweet *)tweet {
 
