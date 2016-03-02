@@ -3,7 +3,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 pod 'AFOnoResponseSerializer'
 pod 'SDWebImage'
-pod 'SSKeychain'
 pod 'MBProgressHUD'
 pod 'RESideMenu'
 pod 'AFNetworking', '~> 2.6.1'

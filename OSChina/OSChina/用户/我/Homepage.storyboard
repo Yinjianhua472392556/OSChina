@@ -58,7 +58,7 @@
                                     <rect key="frame" x="275" y="10" width="30" height="30"/>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" red="0.20392156859999999" green="0.70588235290000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="Ure-LI-m0d" secondAttribute="bottom" id="2bZ-rp-dyS"/>
                                 <constraint firstItem="Nth-HM-plT" firstAttribute="centerY" secondItem="qp7-09-V5d" secondAttribute="centerY" id="4zG-qZ-JJY"/>
@@ -146,7 +146,7 @@
         <!--Navigation Controller-->
         <scene sceneID="S7G-IQ-ces">
             <objects>
-                <navigationController storyboardIdentifier="Nav" id="Lqd-t1-vAh" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Nav" automaticallyAdjustsScrollViewInsets="NO" id="Lqd-t1-vAh" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="C1j-VD-0n6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

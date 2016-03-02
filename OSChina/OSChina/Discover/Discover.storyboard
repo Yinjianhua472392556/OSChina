@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--发现-->
         <scene sceneID="t5o-mw-GWP">
             <objects>
-                <tableViewController storyboardIdentifier="DiscoverViewController" automaticallyAdjustsScrollViewInsets="NO" id="8P6-Xa-VpD" customClass="DiscoverViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DiscoverViewController" id="8P6-Xa-VpD" customClass="DiscoverViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="vEy-SH-o7V">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -17,7 +17,7 @@
                             <tableViewSection id="JMp-ds-S2D">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="RSL-lR-CjI">
-                                        <rect key="frame" x="0.0" y="35" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="99" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RSL-lR-CjI" id="muZ-PR-U1L">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -29,7 +29,7 @@
                             <tableViewSection id="ezh-k5-X1a">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="BS2-3M-8uw">
-                                        <rect key="frame" x="0.0" y="115" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="179" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BS2-3M-8uw" id="wJT-e4-0NI">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -37,7 +37,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="thP-v9-1k3">
-                                        <rect key="frame" x="0.0" y="159" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="223" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="thP-v9-1k3" id="KC7-Pw-kvm">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -49,7 +49,7 @@
                             <tableViewSection id="EPl-Gm-6Po">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bkN-ua-NcF">
-                                        <rect key="frame" x="0.0" y="239" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="303" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bkN-ua-NcF" id="wTI-OM-5Lg">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -57,7 +57,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="JNs-0C-icm">
-                                        <rect key="frame" x="0.0" y="283" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="347" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JNs-0C-icm" id="q92-df-4uq">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -72,7 +72,7 @@
                             <outlet property="delegate" destination="8P6-Xa-VpD" id="E5g-lp-wKp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="s18-xm-I9U"/>
+                    <navigationItem key="navigationItem" title="发现" id="5Kz-2D-0hX"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLy-mc-tuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,7 +81,7 @@
         <!--Navigation Controller-->
         <scene sceneID="0vw-L2-Vpg">
             <objects>
-                <navigationController storyboardIdentifier="Nav" id="Ka0-cP-3OM" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Nav" automaticallyAdjustsScrollViewInsets="NO" id="Ka0-cP-3OM" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="R3h-H3-SpZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

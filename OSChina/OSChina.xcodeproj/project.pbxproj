@@ -24,6 +24,7 @@
 		182C78BA1C7C52AC00FD2B63 /* UIImage+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C78B91C7C52AC00FD2B63 /* UIImage+Util.m */; settings = {ASSET_TAGS = (); }; };
 		182C78BD1C7C545C00FD2B63 /* NSTextAttachment+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C78BC1C7C545C00FD2B63 /* NSTextAttachment+Util.m */; settings = {ASSET_TAGS = (); }; };
 		182C78C01C7C54DD00FD2B63 /* AFHTTPRequestOperationManager+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C78BF1C7C54DD00FD2B63 /* AFHTTPRequestOperationManager+Util.m */; settings = {ASSET_TAGS = (); }; };
+		184A57221C86D2DC00728E8C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184A57211C86D2DC00728E8C /* Security.framework */; };
 		18764EA91C7D83E200E4E269 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18764EA81C7D83E200E4E269 /* Login.storyboard */; settings = {ASSET_TAGS = (); }; };
 		18764EAC1C7D840300E4E269 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18764EAB1C7D840300E4E269 /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
 		18764EB01C7DB0D100E4E269 /* PostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18764EAF1C7DB0D100E4E269 /* PostsViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -346,6 +347,8 @@
 		1890AE621C83F16700047637 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890AE611C83F16700047637 /* DiscoverViewController.m */; settings = {ASSET_TAGS = (); }; };
 		1890AE661C841FB300047637 /* UIScrollView+ScalableCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890AE651C841FB300047637 /* UIScrollView+ScalableCover.m */; settings = {ASSET_TAGS = (); }; };
 		1890AE691C84217A00047637 /* OSCMyInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890AE681C84217A00047637 /* OSCMyInfo.m */; settings = {ASSET_TAGS = (); }; };
+		1897244C1C8694BE00D0116B /* UIImage+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 1897244B1C8694BE00D0116B /* UIImage+FontAwesome.m */; settings = {ASSET_TAGS = (); }; };
+		1897244F1C86C31300D0116B /* OSCThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 1897244E1C86C31300D0116B /* OSCThread.m */; settings = {ASSET_TAGS = (); }; };
 		18C11D081C7BF259001D2706 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C11D071C7BF259001D2706 /* main.m */; };
 		18C11D0B1C7BF259001D2706 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C11D0A1C7BF259001D2706 /* AppDelegate.m */; };
 		18C11D111C7BF259001D2706 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C11D0F1C7BF259001D2706 /* Main.storyboard */; };
@@ -400,6 +403,7 @@
 		182C78BC1C7C545C00FD2B63 /* NSTextAttachment+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextAttachment+Util.m"; sourceTree = "<group>"; };
 		182C78BE1C7C54DD00FD2B63 /* AFHTTPRequestOperationManager+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPRequestOperationManager+Util.h"; sourceTree = "<group>"; };
 		182C78BF1C7C54DD00FD2B63 /* AFHTTPRequestOperationManager+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPRequestOperationManager+Util.m"; sourceTree = "<group>"; };
+		184A57211C86D2DC00728E8C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		18764EA81C7D83E200E4E269 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		18764EAA1C7D840300E4E269 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		18764EAB1C7D840300E4E269 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
@@ -740,6 +744,10 @@
 		1890AE651C841FB300047637 /* UIScrollView+ScalableCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ScalableCover.m"; sourceTree = "<group>"; };
 		1890AE671C84217A00047637 /* OSCMyInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCMyInfo.h; sourceTree = "<group>"; };
 		1890AE681C84217A00047637 /* OSCMyInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCMyInfo.m; sourceTree = "<group>"; };
+		1897244A1C8694BE00D0116B /* UIImage+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FontAwesome.h"; sourceTree = "<group>"; };
+		1897244B1C8694BE00D0116B /* UIImage+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FontAwesome.m"; sourceTree = "<group>"; };
+		1897244D1C86C31300D0116B /* OSCThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCThread.h; sourceTree = "<group>"; };
+		1897244E1C86C31300D0116B /* OSCThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCThread.m; sourceTree = "<group>"; };
 		18C11D031C7BF259001D2706 /* OSChina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSChina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C11D071C7BF259001D2706 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18C11D091C7BF259001D2706 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -776,6 +784,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184A57221C86D2DC00728E8C /* Security.framework in Frameworks */,
 				D742019AFB9328ED87342F73 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -792,6 +801,8 @@
 				182C78891C7C00A700FD2B63 /* Config.m */,
 				182C78B21C7C51D400FD2B63 /* Utils.h */,
 				182C78B31C7C51D400FD2B63 /* Utils.m */,
+				1897244D1C86C31300D0116B /* OSCThread.h */,
+				1897244E1C86C31300D0116B /* OSCThread.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -905,6 +916,13 @@
 				1890AE681C84217A00047637 /* OSCMyInfo.m */,
 			);
 			path = OSC;
+			sourceTree = "<group>";
+		};
+		184A57231C86D30A00728E8C /* 第三方库 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "第三方库";
 			sourceTree = "<group>";
 		};
 		18764EA71C7D83BC00E4E269 /* 用户 */ = {
@@ -1445,6 +1463,7 @@
 				18C11D121C7BF259001D2706 /* Assets.xcassets */,
 				18C11D141C7BF259001D2706 /* LaunchScreen.storyboard */,
 				18C11D171C7BF259001D2706 /* Info.plist */,
+				184A57231C86D30A00728E8C /* 第三方库 */,
 				1890AE5D1C83F13900047637 /* Discover */,
 				18F02AD91C7FDEF20080AE1F /* 动弹 */,
 				18F02AD81C7FDE9B0080AE1F /* 新闻 */,
@@ -1509,6 +1528,8 @@
 				18F02AF21C8028F30080AE1F /* UIFont+FontAwesome.m */,
 				18F02AF41C80295D0080AE1F /* NSString+FontAwesome.h */,
 				18F02AF51C80295D0080AE1F /* NSString+FontAwesome.m */,
+				1897244A1C8694BE00D0116B /* UIImage+FontAwesome.h */,
+				1897244B1C8694BE00D0116B /* UIImage+FontAwesome.m */,
 			);
 			path = FontAwesome;
 			sourceTree = "<group>";
@@ -1516,6 +1537,7 @@
 		E88366155100AF08BC541269 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				184A57211C86D2DC00728E8C /* Security.framework */,
 				6C61B47567F51103C41ADB24 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -1958,6 +1980,7 @@
 				1876512C1C7EE26400E4E269 /* OSCSoftware.m in Sources */,
 				182C78BD1C7C545C00FD2B63 /* NSTextAttachment+Util.m in Sources */,
 				18F02AF31C8028F30080AE1F /* UIFont+FontAwesome.m in Sources */,
+				1897244F1C86C31300D0116B /* OSCThread.m in Sources */,
 				18F02AEC1C7FF6800080AE1F /* OSCTweet.m in Sources */,
 				182C78C01C7C54DD00FD2B63 /* AFHTTPRequestOperationManager+Util.m in Sources */,
 				187651261C7EDB5F00E4E269 /* OSCSoftwareCatalog.m in Sources */,
@@ -1993,6 +2016,7 @@
 				182C78991C7C0E5200FD2B63 /* OSCTabBarController.m in Sources */,
 				182C78A11C7C384100FD2B63 /* TitleBarView.m in Sources */,
 				18F02AE91C7FF6310080AE1F /* TweetCell.m in Sources */,
+				1897244C1C8694BE00D0116B /* UIImage+FontAwesome.m in Sources */,
 				182C78BA1C7C52AC00FD2B63 /* UIImage+Util.m in Sources */,
 				182C78A71C7C387700FD2B63 /* SwipableViewController.m in Sources */,
 				18764EB71C7E90B000E4E269 /* PostCell.m in Sources */,

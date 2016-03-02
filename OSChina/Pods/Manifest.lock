@@ -43,7 +43,6 @@ PODS:
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
-  - SSKeychain (1.3.1)
   - TBXML (1.5)
   - TOWebViewController (2.2.3):
     - TOWebViewController/Core (= 2.2.3)
@@ -63,7 +62,6 @@ DEPENDENCIES:
   - ReactiveCocoa (~> 2.5)
   - RESideMenu
   - SDWebImage
-  - SSKeychain
   - TBXML
   - TOWebViewController
   - TTTAttributedLabel
@@ -92,7 +90,6 @@ SPEC CHECKSUMS:
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RESideMenu: f24c508404b49c667344c54aba7e590883533958
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
-  SSKeychain: 04c4ec40f4c3deda524e269bc76e5f30e638a174
   TBXML: 9f9dadb239f2f2af1dadb87fe43a0ce6e479379a
   TOWebViewController: ca47b9aeefe66acb3353d197dc8270338540b116
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f

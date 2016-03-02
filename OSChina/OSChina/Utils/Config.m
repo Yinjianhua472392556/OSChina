@@ -8,7 +8,7 @@
 
 #import "Config.h"
 #import "OSCMyInfo.h"
-
+//#import "SSKeychain.h"
 
 NSString * const kService = @"OSChina";
 NSString * const kAccount = @"account";
@@ -76,6 +76,18 @@ NSString * const kTeamsArray = @"teams";
     return @[@"点击头像登录", @(0), @(0), @(0), @(0), @(0)];
 }
 
++ (void)saveOwnID:(int64_t)userID userName:(NSString *)userName score:(int)score favoriteCount:(int)favoriteCount fansCount:(int)fanCount andFollowerCount:(int)followerCount {
+
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject:@(userID) forKey:kUserID];
+    [userDefaults setObject:userName forKey:kUserName];
+    [userDefaults setObject:@(score) forKey:kUserScore];
+    [userDefaults setObject:@(favoriteCount) forKey:kFavoriteCount];
+    [userDefaults setObject:@(fanCount) forKey:kFanCount];
+    [userDefaults setObject:@(followerCount) forKey:kFollowerCount];
+    [userDefaults synchronize];
+}
+
 + (UIImage *)getPortrait {
 
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
@@ -110,6 +122,26 @@ NSString * const kTeamsArray = @"teams";
     [userDefaults setObject:@(myInfo.followersCount) forKey:kFollowerCount];
     [userDefaults synchronize];
 
+}
+
++ (NSArray *)getOwnAccountAndPassword {
+
+//    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+//    NSString *account = [userDefaults objectForKey:kAccount];
+//    NSString *password = [SSKeychain passwordForService:kService account:account];
+//    if (account) {
+//        return @[account, password];
+//    }
+//    
+    return nil;
+}
+
++ (void)saveOwnAccount:(NSString *)account andPassword:(NSString *)password {
+
+//    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+//    [userDefaults setObject:account forKey:kAccount];
+//    [userDefaults synchronize];
+//    [SSKeychain setPassword:password forService:kService account:account];
 }
 
 @end

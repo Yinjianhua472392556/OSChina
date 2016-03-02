@@ -14,5 +14,8 @@
 
 @property (nonatomic, assign) BOOL inNightMode;
 
+//@property (nonatomic, weak) id<> *<#name#>;
+
+
 @end
 
