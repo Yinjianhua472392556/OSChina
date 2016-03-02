@@ -918,13 +918,6 @@
 			path = OSC;
 			sourceTree = "<group>";
 		};
-		184A57231C86D30A00728E8C /* 第三方库 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "第三方库";
-			sourceTree = "<group>";
-		};
 		18764EA71C7D83BC00E4E269 /* 用户 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1463,7 +1456,6 @@
 				18C11D121C7BF259001D2706 /* Assets.xcassets */,
 				18C11D141C7BF259001D2706 /* LaunchScreen.storyboard */,
 				18C11D171C7BF259001D2706 /* Info.plist */,
-				184A57231C86D30A00728E8C /* 第三方库 */,
 				1890AE5D1C83F13900047637 /* Discover */,
 				18F02AD91C7FDEF20080AE1F /* 动弹 */,
 				18F02AD81C7FDE9B0080AE1F /* 新闻 */,
