@@ -148,7 +148,7 @@
     [Config saveOwnID:user.userID userName:user.name score:user.score favoriteCount:user.favoriteCount fansCount:user.fansCount andFollowerCount:user.followersCount];
     [OSCThread startPollingNotice];
     [self saveCookies];
-    
+    [_hud hide:YES];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"userRefresh" object:@(YES)];
     [self.navigationController popViewControllerAnimated:YES];
     

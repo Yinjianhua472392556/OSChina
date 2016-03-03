@@ -23,5 +23,7 @@
 + (void)updateMyInfo:(OSCMyInfo *)myInfo;
 + (NSArray *)getOwnAccountAndPassword;
 + (void)saveOwnAccount:(NSString *)account andPassword:(NSString *)password;
++ (void)removeTeamInfo;
++ (void)clearCookie;
 
 @end

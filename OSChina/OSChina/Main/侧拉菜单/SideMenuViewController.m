@@ -21,6 +21,7 @@
 #import "SoftwareListVC.h"
 #import "SoftwareCatalogVC.h"
 #import "BlogsViewController.h"
+#import "SettingsPage.h"
 
 static BOOL isNight;
 
@@ -188,8 +189,11 @@ static BOOL isNight;
             
             break;
         }
-        case 3:
+        case 3:{
+            SettingsPage *settingPage = [SettingsPage new];
+            [self setContentViewController:settingPage];
             break;
+        }
         case 4:
             isNight = [Config getMode];
             if (isNight) {

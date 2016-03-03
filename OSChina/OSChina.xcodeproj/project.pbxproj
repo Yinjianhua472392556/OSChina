@@ -354,6 +354,10 @@
 		18C11D111C7BF259001D2706 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C11D0F1C7BF259001D2706 /* Main.storyboard */; };
 		18C11D131C7BF259001D2706 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C11D121C7BF259001D2706 /* Assets.xcassets */; };
 		18C11D161C7BF259001D2706 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C11D141C7BF259001D2706 /* LaunchScreen.storyboard */; };
+		18D687E71C87D70800F0E4E8 /* SettingsPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D687E61C87D70800F0E4E8 /* SettingsPage.m */; settings = {ASSET_TAGS = (); }; };
+		18D687EA1C87E45B00F0E4E8 /* AboutPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D687E91C87E45B00F0E4E8 /* AboutPage.m */; settings = {ASSET_TAGS = (); }; };
+		18D687ED1C87E46C00F0E4E8 /* OSLicensePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D687EC1C87E46C00F0E4E8 /* OSLicensePage.m */; settings = {ASSET_TAGS = (); }; };
+		18D687F01C87E47F00F0E4E8 /* FeedbackPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D687EF1C87E47F00F0E4E8 /* FeedbackPage.m */; settings = {ASSET_TAGS = (); }; };
 		18F02ADC1C7FE3B00080AE1F /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F02ADB1C7FE3B00080AE1F /* NewsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		18F02AE01C7FE69D0080AE1F /* OSCNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F02ADF1C7FE69D0080AE1F /* OSCNews.m */; settings = {ASSET_TAGS = (); }; };
 		18F02AE31C7FEC1F0080AE1F /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F02AE21C7FEC1F0080AE1F /* NewsCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -756,6 +760,14 @@
 		18C11D121C7BF259001D2706 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18C11D151C7BF259001D2706 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18C11D171C7BF259001D2706 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D687E51C87D70800F0E4E8 /* SettingsPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsPage.h; sourceTree = "<group>"; };
+		18D687E61C87D70800F0E4E8 /* SettingsPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsPage.m; sourceTree = "<group>"; };
+		18D687E81C87E45B00F0E4E8 /* AboutPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPage.h; sourceTree = "<group>"; };
+		18D687E91C87E45B00F0E4E8 /* AboutPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPage.m; sourceTree = "<group>"; };
+		18D687EB1C87E46C00F0E4E8 /* OSLicensePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSLicensePage.h; sourceTree = "<group>"; };
+		18D687EC1C87E46C00F0E4E8 /* OSLicensePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSLicensePage.m; sourceTree = "<group>"; };
+		18D687EE1C87E47F00F0E4E8 /* FeedbackPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackPage.h; sourceTree = "<group>"; };
+		18D687EF1C87E47F00F0E4E8 /* FeedbackPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackPage.m; sourceTree = "<group>"; };
 		18F02ADA1C7FE3B00080AE1F /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		18F02ADB1C7FE3B00080AE1F /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		18F02ADE1C7FE69D0080AE1F /* OSCNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCNews.h; sourceTree = "<group>"; };
@@ -844,6 +856,7 @@
 			children = (
 				182C78941C7C0DFB00FD2B63 /* SideMenuViewController.h */,
 				182C78951C7C0DFB00FD2B63 /* SideMenuViewController.m */,
+				18D687E11C87D6AA00F0E4E8 /* 设置 */,
 			);
 			path = "侧拉菜单";
 			sourceTree = "<group>";
@@ -1482,6 +1495,45 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		18D687E11C87D6AA00F0E4E8 /* 设置 */ = {
+			isa = PBXGroup;
+			children = (
+				18D687E21C87D6E300F0E4E8 /* 关于 */,
+				18D687E31C87D6E300F0E4E8 /* 开源许可 */,
+				18D687E41C87D6E300F0E4E8 /* 意见反馈 */,
+				18D687E51C87D70800F0E4E8 /* SettingsPage.h */,
+				18D687E61C87D70800F0E4E8 /* SettingsPage.m */,
+			);
+			path = "设置";
+			sourceTree = "<group>";
+		};
+		18D687E21C87D6E300F0E4E8 /* 关于 */ = {
+			isa = PBXGroup;
+			children = (
+				18D687E81C87E45B00F0E4E8 /* AboutPage.h */,
+				18D687E91C87E45B00F0E4E8 /* AboutPage.m */,
+			);
+			path = "关于";
+			sourceTree = "<group>";
+		};
+		18D687E31C87D6E300F0E4E8 /* 开源许可 */ = {
+			isa = PBXGroup;
+			children = (
+				18D687EB1C87E46C00F0E4E8 /* OSLicensePage.h */,
+				18D687EC1C87E46C00F0E4E8 /* OSLicensePage.m */,
+			);
+			path = "开源许可";
+			sourceTree = "<group>";
+		};
+		18D687E41C87D6E300F0E4E8 /* 意见反馈 */ = {
+			isa = PBXGroup;
+			children = (
+				18D687EE1C87E47F00F0E4E8 /* FeedbackPage.h */,
+				18D687EF1C87E47F00F0E4E8 /* FeedbackPage.m */,
+			);
+			path = "意见反馈";
+			sourceTree = "<group>";
+		};
 		18F02AD81C7FDE9B0080AE1F /* 新闻 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1992,6 +2044,7 @@
 				1876512F1C7EE80D00E4E269 /* SoftwareCell.m in Sources */,
 				182C788A1C7C00A700FD2B63 /* Config.m in Sources */,
 				1890AE691C84217A00047637 /* OSCMyInfo.m in Sources */,
+				18D687ED1C87E46C00F0E4E8 /* OSLicensePage.m in Sources */,
 				18F02AF61C80295D0080AE1F /* NSString+FontAwesome.m in Sources */,
 				182C78931C7C0DB400FD2B63 /* RootViewController.m in Sources */,
 				182C78AC1C7C3A0000FD2B63 /* LastCell.m in Sources */,
@@ -2002,10 +2055,12 @@
 				18C11D081C7BF259001D2706 /* main.m in Sources */,
 				1890AE661C841FB300047637 /* UIScrollView+ScalableCover.m in Sources */,
 				1890AE621C83F16700047637 /* DiscoverViewController.m in Sources */,
+				18D687E71C87D70800F0E4E8 /* SettingsPage.m in Sources */,
 				18F02AE31C7FEC1F0080AE1F /* NewsCell.m in Sources */,
 				1890AE5C1C83F10B00047637 /* MyBasicInfoViewController.m in Sources */,
 				182C78A41C7C385F00FD2B63 /* HorizonalTableViewController.m in Sources */,
 				182C78991C7C0E5200FD2B63 /* OSCTabBarController.m in Sources */,
+				18D687EA1C87E45B00F0E4E8 /* AboutPage.m in Sources */,
 				182C78A11C7C384100FD2B63 /* TitleBarView.m in Sources */,
 				18F02AE91C7FF6310080AE1F /* TweetCell.m in Sources */,
 				1897244C1C8694BE00D0116B /* UIImage+FontAwesome.m in Sources */,
@@ -2017,6 +2072,7 @@
 				182C78961C7C0DFB00FD2B63 /* SideMenuViewController.m in Sources */,
 				182C78871C7BFFCC00FD2B63 /* UIColor+Util.m in Sources */,
 				187651291C7EE01000E4E269 /* SoftwareListVC.m in Sources */,
+				18D687F01C87E47F00F0E4E8 /* FeedbackPage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 #import "SoftwareCatalogVC.h"
 #import "OSCSoftwareCatalog.h"
 #import "UIColor+Util.h"
+#import "SoftwareListVC.h"
 
 static NSString * const kSoftwareCatalogCellID = @"SoftwareCatalogCell";
 
@@ -76,7 +77,8 @@ static NSString * const kSoftwareCatalogCellID = @"SoftwareCatalogCell";
         [self.navigationController pushViewController:softwareCatalogVC animated:YES];
     }else {
     
-        
+        SoftwareListVC *softwareListVC = [[SoftwareListVC alloc] initWithSearchTag:softwareCatalog.tag];
+        [self.navigationController pushViewController:softwareListVC animated:YES];
     }
 }
 

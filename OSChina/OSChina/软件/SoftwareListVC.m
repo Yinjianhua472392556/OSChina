@@ -79,11 +79,12 @@ static NSString *kSoftwareCellID = @"SoftwareCell";
 
     SoftwareCell *cell = [tableView dequeueReusableCellWithIdentifier:kSoftwareCellID forIndexPath:indexPath];
     OSCSoftware *software = self.objects[indexPath.row];
-    
     cell.backgroundColor= [UIColor themeColor];
     cell.nameLabel.text = software.name;
     cell.descriptionLabel.text = software.softwareDescription;
     cell.nameLabel.textColor = [UIColor titleColor];
+    [cell setNeedsUpdateConstraints];
+    [cell updateConstraintsIfNeeded];
     cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];
     cell.selectedBackgroundView.backgroundColor = [UIColor selectCellSColor];
     return cell;
@@ -100,9 +101,9 @@ static NSString *kSoftwareCellID = @"SoftwareCell";
     }
     cell.nameLabel.text = software.name;
     cell.descriptionLabel.text = software.softwareDescription;
-    [cell setNeedsLayout];
-    [cell layoutIfNeeded];
-    CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    [cell setNeedsUpdateConstraints];
+    [cell updateConstraintsIfNeeded];
+     CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
     height += 10;
     return height;
 }

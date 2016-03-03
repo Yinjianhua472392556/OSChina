@@ -59,6 +59,8 @@ static NSString *kPostCellID = @"PostCell";
     
     cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];
     cell.selectedBackgroundView.backgroundColor = [UIColor selectCellSColor];
+    [cell setNeedsUpdateConstraints];
+    [cell updateConstraintsIfNeeded];
     
     return cell;
 }
@@ -80,8 +82,8 @@ static NSString *kPostCellID = @"PostCell";
     [cell.timeLabel setText:[Utils intervalSinceNow:post.pubDate]];
     [cell.commentAndView setText:[NSString stringWithFormat:@"%d回 / %d阅",post.replyCount,post.viewCount]];
 
-    [cell setNeedsLayout];
-    [cell layoutIfNeeded];
+    [cell setNeedsUpdateConstraints];
+    [cell updateConstraintsIfNeeded];
     CGFloat  height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
     height += 10;
     return height;

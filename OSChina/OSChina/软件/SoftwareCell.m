@@ -8,6 +8,11 @@
 
 #import "SoftwareCell.h"
 #import "UIColor+Util.h"
+
+@interface SoftwareCell()
+@property (nonatomic, assign) BOOL didSetupConstraints;
+@end
+
 @implementation SoftwareCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
@@ -17,7 +22,6 @@
         self.contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         self.backgroundColor = [UIColor themeColor];
         [self initSubviews];
-        [self setLayout];
     }
     return self;
 }
@@ -38,25 +42,39 @@
 
 }
 
-- (void)setLayout {
+//- (void)setLayout {
+//
+//    [self.nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.equalTo(self.contentView.mas_left).offset(8);
+//        make.right.equalTo(self.contentView.mas_right).offset(8);
+//        make.top.equalTo(self.contentView.mas_top).offset(8);
+//    }];
+//    
+//    [self.descriptionLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(self.nameLabel.mas_bottom).offset(5);
+//        make.left.equalTo(self.nameLabel.mas_left);
+//        make.right.equalTo(self.nameLabel.mas_right);
+//    }];
+//}
 
-    [self.nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.contentView.mas_left).offset(8);
-        make.right.equalTo(self.contentView.mas_right).offset(8);
-        make.top.equalTo(self.contentView.mas_top).offset(8);
-    }];
-    
-    [self.descriptionLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.nameLabel.mas_bottom).offset(5);
-        make.left.equalTo(self.nameLabel.mas_left);
-        make.right.equalTo(self.nameLabel.mas_right);
-    }];
-}
+- (void)updateConstraints {
 
-- (void)layoutSubviews {
-
-    [super layoutSubviews];
-    self.descriptionLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.descriptionLabel.frame);
-    [super layoutSubviews];
+    if (!self.didSetupConstraints) {
+        [self.nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.contentView.mas_left).offset(8);
+            make.right.equalTo(self.contentView.mas_right).offset(-8);
+            make.top.equalTo(self.contentView.mas_top).offset(8);
+        }];
+        
+        [self.descriptionLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.nameLabel.mas_bottom).offset(5);
+            make.left.equalTo(self.nameLabel.mas_left);
+            make.right.equalTo(self.nameLabel.mas_right);
+            make.bottom.equalTo(self.contentView.mas_bottom).offset(-8);
+        }];
+        
+        self.didSetupConstraints = YES;
+    }
+    [super updateConstraints];
 }
 @end

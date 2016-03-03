@@ -144,4 +144,15 @@ NSString * const kTeamsArray = @"teams";
     [SSKeychain setPassword:password forService:kService account:account];
 }
 
++ (void)removeTeamInfo {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults removeObjectForKey:kTeamID];
+    [userDefaults removeObjectForKey:kTeamsArray];
+}
+
++ (void)clearCookie {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults removeObjectForKey:@"sessionCookies"];
+}
+
 @end
