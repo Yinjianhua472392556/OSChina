@@ -358,6 +358,16 @@
 		18D687EA1C87E45B00F0E4E8 /* AboutPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D687E91C87E45B00F0E4E8 /* AboutPage.m */; settings = {ASSET_TAGS = (); }; };
 		18D687ED1C87E46C00F0E4E8 /* OSLicensePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D687EC1C87E46C00F0E4E8 /* OSLicensePage.m */; settings = {ASSET_TAGS = (); }; };
 		18D687F01C87E47F00F0E4E8 /* FeedbackPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D687EF1C87E47F00F0E4E8 /* FeedbackPage.m */; settings = {ASSET_TAGS = (); }; };
+		18D687F41C881AD900F0E4E8 /* BottomBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D687F31C881AD900F0E4E8 /* BottomBarViewController.m */; settings = {ASSET_TAGS = (); }; };
+		18D687F71C881AF100F0E4E8 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D687F61C881AF100F0E4E8 /* DetailsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		18D687FD1C881C1800F0E4E8 /* EmojiPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D687FC1C881C1800F0E4E8 /* EmojiPageVC.m */; settings = {ASSET_TAGS = (); }; };
+		18D688001C881C3E00F0E4E8 /* EmojiPanelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D687FF1C881C3E00F0E4E8 /* EmojiPanelVC.m */; settings = {ASSET_TAGS = (); }; };
+		18D688031C881C6700F0E4E8 /* PlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D688021C881C6700F0E4E8 /* PlaceholderTextView.m */; settings = {ASSET_TAGS = (); }; };
+		18D688061C881CE300F0E4E8 /* EditingBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D688051C881CE300F0E4E8 /* EditingBar.m */; settings = {ASSET_TAGS = (); }; };
+		18D688091C881D0200F0E4E8 /* GrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D688081C881D0200F0E4E8 /* GrowingTextView.m */; settings = {ASSET_TAGS = (); }; };
+		18D6880C1C881D2800F0E4E8 /* OperationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D6880B1C881D2800F0E4E8 /* OperationBar.m */; settings = {ASSET_TAGS = (); }; };
+		18D6880E1C89722400F0E4E8 /* emoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18D6880D1C89722400F0E4E8 /* emoji.plist */; settings = {ASSET_TAGS = (); }; };
+		18D688101C89723E00F0E4E8 /* emojiToText.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18D6880F1C89723E00F0E4E8 /* emojiToText.plist */; settings = {ASSET_TAGS = (); }; };
 		18F02ADC1C7FE3B00080AE1F /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F02ADB1C7FE3B00080AE1F /* NewsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		18F02AE01C7FE69D0080AE1F /* OSCNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F02ADF1C7FE69D0080AE1F /* OSCNews.m */; settings = {ASSET_TAGS = (); }; };
 		18F02AE31C7FEC1F0080AE1F /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F02AE21C7FEC1F0080AE1F /* NewsCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -768,6 +778,24 @@
 		18D687EC1C87E46C00F0E4E8 /* OSLicensePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSLicensePage.m; sourceTree = "<group>"; };
 		18D687EE1C87E47F00F0E4E8 /* FeedbackPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackPage.h; sourceTree = "<group>"; };
 		18D687EF1C87E47F00F0E4E8 /* FeedbackPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackPage.m; sourceTree = "<group>"; };
+		18D687F21C881AD900F0E4E8 /* BottomBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomBarViewController.h; sourceTree = "<group>"; };
+		18D687F31C881AD900F0E4E8 /* BottomBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomBarViewController.m; sourceTree = "<group>"; };
+		18D687F51C881AF100F0E4E8 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		18D687F61C881AF100F0E4E8 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		18D687FB1C881C1800F0E4E8 /* EmojiPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiPageVC.h; sourceTree = "<group>"; };
+		18D687FC1C881C1800F0E4E8 /* EmojiPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiPageVC.m; sourceTree = "<group>"; };
+		18D687FE1C881C3E00F0E4E8 /* EmojiPanelVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiPanelVC.h; sourceTree = "<group>"; };
+		18D687FF1C881C3E00F0E4E8 /* EmojiPanelVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiPanelVC.m; sourceTree = "<group>"; };
+		18D688011C881C6700F0E4E8 /* PlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceholderTextView.h; sourceTree = "<group>"; };
+		18D688021C881C6700F0E4E8 /* PlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceholderTextView.m; sourceTree = "<group>"; };
+		18D688041C881CE300F0E4E8 /* EditingBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditingBar.h; sourceTree = "<group>"; };
+		18D688051C881CE300F0E4E8 /* EditingBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditingBar.m; sourceTree = "<group>"; };
+		18D688071C881D0200F0E4E8 /* GrowingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingTextView.h; sourceTree = "<group>"; };
+		18D688081C881D0200F0E4E8 /* GrowingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingTextView.m; sourceTree = "<group>"; };
+		18D6880A1C881D2800F0E4E8 /* OperationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationBar.h; sourceTree = "<group>"; };
+		18D6880B1C881D2800F0E4E8 /* OperationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationBar.m; sourceTree = "<group>"; };
+		18D6880D1C89722400F0E4E8 /* emoji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emoji.plist; sourceTree = "<group>"; };
+		18D6880F1C89723E00F0E4E8 /* emojiToText.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emojiToText.plist; sourceTree = "<group>"; };
 		18F02ADA1C7FE3B00080AE1F /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		18F02ADB1C7FE3B00080AE1F /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		18F02ADE1C7FE69D0080AE1F /* OSCNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCNews.h; sourceTree = "<group>"; };
@@ -877,6 +905,7 @@
 			children = (
 				182C789B1C7C37E900FD2B63 /* OSCObjsViewController.h */,
 				182C789C1C7C37E900FD2B63 /* OSCObjsViewController.m */,
+				18D687F11C881AB500F0E4E8 /* 详情页面 */,
 				182C789E1C7C382A00FD2B63 /* SwipableViewController */,
 			);
 			path = "Main ViewControllers";
@@ -900,6 +929,10 @@
 			children = (
 				182C78AA1C7C3A0000FD2B63 /* LastCell.h */,
 				182C78AB1C7C3A0000FD2B63 /* LastCell.m */,
+				18D687F91C881BA100F0E4E8 /* BottomBar */,
+				18D687F81C881B8300F0E4E8 /* EmojiPanel */,
+				18D688011C881C6700F0E4E8 /* PlaceholderTextView.h */,
+				18D688021C881C6700F0E4E8 /* PlaceholderTextView.m */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -1489,6 +1522,8 @@
 		18C11D061C7BF259001D2706 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18D6880F1C89723E00F0E4E8 /* emojiToText.plist */,
+				18D6880D1C89722400F0E4E8 /* emoji.plist */,
 				18C11D071C7BF259001D2706 /* main.m */,
 				182C78821C7BF97C00FD2B63 /* PrefixHeader.pch */,
 			);
@@ -1532,6 +1567,49 @@
 				18D687EF1C87E47F00F0E4E8 /* FeedbackPage.m */,
 			);
 			path = "意见反馈";
+			sourceTree = "<group>";
+		};
+		18D687F11C881AB500F0E4E8 /* 详情页面 */ = {
+			isa = PBXGroup;
+			children = (
+				18D687F21C881AD900F0E4E8 /* BottomBarViewController.h */,
+				18D687F31C881AD900F0E4E8 /* BottomBarViewController.m */,
+				18D687F51C881AF100F0E4E8 /* DetailsViewController.h */,
+				18D687F61C881AF100F0E4E8 /* DetailsViewController.m */,
+			);
+			path = "详情页面";
+			sourceTree = "<group>";
+		};
+		18D687F81C881B8300F0E4E8 /* EmojiPanel */ = {
+			isa = PBXGroup;
+			children = (
+				18D687FB1C881C1800F0E4E8 /* EmojiPageVC.h */,
+				18D687FC1C881C1800F0E4E8 /* EmojiPageVC.m */,
+				18D687FE1C881C3E00F0E4E8 /* EmojiPanelVC.h */,
+				18D687FF1C881C3E00F0E4E8 /* EmojiPanelVC.m */,
+			);
+			path = EmojiPanel;
+			sourceTree = "<group>";
+		};
+		18D687F91C881BA100F0E4E8 /* BottomBar */ = {
+			isa = PBXGroup;
+			children = (
+				18D687FA1C881BBE00F0E4E8 /* EditingBar */,
+				18D6880A1C881D2800F0E4E8 /* OperationBar.h */,
+				18D6880B1C881D2800F0E4E8 /* OperationBar.m */,
+			);
+			path = BottomBar;
+			sourceTree = "<group>";
+		};
+		18D687FA1C881BBE00F0E4E8 /* EditingBar */ = {
+			isa = PBXGroup;
+			children = (
+				18D688041C881CE300F0E4E8 /* EditingBar.h */,
+				18D688051C881CE300F0E4E8 /* EditingBar.m */,
+				18D688071C881D0200F0E4E8 /* GrowingTextView.h */,
+				18D688081C881D0200F0E4E8 /* GrowingTextView.m */,
+			);
+			path = EditingBar;
 			sourceTree = "<group>";
 		};
 		18F02AD81C7FDE9B0080AE1F /* 新闻 */ = {
@@ -1707,6 +1785,7 @@
 				1876500E1C7EAACF00E4E269 /* -1@2x.png in Resources */,
 				187650EE1C7EAACF00E4E269 /* toolbar-barSwitch@3x.png in Resources */,
 				187650781C7EAACF00E4E269 /* bowtie@2x.png in Resources */,
+				18D688101C89723E00F0E4E8 /* emojiToText.plist in Resources */,
 				187650861C7EAACF00E4E269 /* suspect@2x.png in Resources */,
 				187650C71C7EAACF00E4E269 /* shooting@3x.png in Resources */,
 				187650671C7EAACF00E4E269 /* 089@2x.png in Resources */,
@@ -1873,6 +1952,7 @@
 				1876511C1C7EAACF00E4E269 /* widget_repaste_icon副本.png in Resources */,
 				1876500A1C7EAACF00E4E269 /* shThemeMDUltra.css in Resources */,
 				187650DC1C7EAACF00E4E269 /* tabbar-me-selected@3x.png in Resources */,
+				18D6880E1C89722400F0E4E8 /* emoji.plist in Resources */,
 				187650CA1C7EAACF00E4E269 /* sound@3x.png in Resources */,
 				187650B71C7EAACF00E4E269 /* note.png in Resources */,
 				187650E51C7EAACF00E4E269 /* tabbar-tweet-selected@2x.png in Resources */,
@@ -2026,6 +2106,7 @@
 				18F02AF31C8028F30080AE1F /* UIFont+FontAwesome.m in Sources */,
 				1897244F1C86C31300D0116B /* OSCThread.m in Sources */,
 				18F02AEC1C7FF6800080AE1F /* OSCTweet.m in Sources */,
+				18D688031C881C6700F0E4E8 /* PlaceholderTextView.m in Sources */,
 				182C78C01C7C54DD00FD2B63 /* AFHTTPRequestOperationManager+Util.m in Sources */,
 				187651261C7EDB5F00E4E269 /* OSCSoftwareCatalog.m in Sources */,
 				182C788D1C7C04A500FD2B63 /* UIView+Util.m in Sources */,
@@ -2035,13 +2116,16 @@
 				18764EAC1C7D840300E4E269 /* LoginViewController.m in Sources */,
 				182C78B71C7C522C00FD2B63 /* UIImageView+Util.m in Sources */,
 				1890AE591C83F0F300047637 /* HomepageViewController.m in Sources */,
+				18D687F41C881AD900F0E4E8 /* BottomBarViewController.m in Sources */,
 				182C789D1C7C37E900FD2B63 /* OSCObjsViewController.m in Sources */,
 				182C78B41C7C51D400FD2B63 /* Utils.m in Sources */,
 				18764EB01C7DB0D100E4E269 /* PostsViewController.m in Sources */,
 				18F02ADC1C7FE3B00080AE1F /* NewsViewController.m in Sources */,
+				18D688061C881CE300F0E4E8 /* EditingBar.m in Sources */,
 				18764EB41C7E8CA700E4E269 /* OSCPost.m in Sources */,
 				1876513A1C7EF09000E4E269 /* OSCBlog.m in Sources */,
 				1876512F1C7EE80D00E4E269 /* SoftwareCell.m in Sources */,
+				18D688001C881C3E00F0E4E8 /* EmojiPanelVC.m in Sources */,
 				182C788A1C7C00A700FD2B63 /* Config.m in Sources */,
 				1890AE691C84217A00047637 /* OSCMyInfo.m in Sources */,
 				18D687ED1C87E46C00F0E4E8 /* OSLicensePage.m in Sources */,
@@ -2071,8 +2155,12 @@
 				187651331C7EEDCF00E4E269 /* BlogsViewController.m in Sources */,
 				182C78961C7C0DFB00FD2B63 /* SideMenuViewController.m in Sources */,
 				182C78871C7BFFCC00FD2B63 /* UIColor+Util.m in Sources */,
+				18D687FD1C881C1800F0E4E8 /* EmojiPageVC.m in Sources */,
+				18D687F71C881AF100F0E4E8 /* DetailsViewController.m in Sources */,
+				18D688091C881D0200F0E4E8 /* GrowingTextView.m in Sources */,
 				187651291C7EE01000E4E269 /* SoftwareListVC.m in Sources */,
 				18D687F01C87E47F00F0E4E8 /* FeedbackPage.m in Sources */,
+				18D6880C1C881D2800F0E4E8 /* OperationBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
