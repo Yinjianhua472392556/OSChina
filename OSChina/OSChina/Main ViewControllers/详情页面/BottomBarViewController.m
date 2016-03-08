@@ -214,7 +214,6 @@
         
         [_editingBar.inputViewButton setImage:[UIImage imageNamed:@"toolbar-emoji2"] forState:UIControlStateNormal];
         _editingBarYConstraint.constant = 0;
-        _editingBarYConstraint.constant = 0;
         [self setBottomBarHeight];
     }
 }

@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Ono.h"
-#import "TBXML.h"
+#import <Ono/Ono.h>
+#import <TBXML/TBXML.h>
 
 @interface OSCBaseObject : NSObject
 

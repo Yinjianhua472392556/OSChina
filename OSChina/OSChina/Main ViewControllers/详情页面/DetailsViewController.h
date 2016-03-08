@@ -8,6 +8,30 @@
 
 #import "BottomBarViewController.h"
 
+typedef NS_ENUM(NSUInteger, DetailsType) {
+    DetailsTypeNews,
+    DetailsTypeBlog,
+    DetailsTypeSoftware,
+};
+
+typedef NS_ENUM(NSUInteger, FavoriteType) {
+    FavoriteTypeSoftware,
+    FavoriteTypeTopic,
+    FavoriteTypeBlog,
+    FavoriteTypeNews,
+    FavoriteTypeCode,
+};
+
+@class OSCNews;
+@class OSCBlog;
+@class OSCPost;
+@class OSCSoftware;
+
 @interface DetailsViewController : BottomBarViewController
+
+- (instancetype)initWithNews:(OSCNews *)news;
+- (instancetype)initWithBlog:(OSCBlog *)blog;
+- (instancetype)initWithPost:(OSCPost *)post;
+- (instancetype)initWithSoftware:(OSCSoftware *)software;
 
 @end
