@@ -66,12 +66,28 @@
 }
 
 
-- (NSString *)html {
-
+- (NSString *)html
+{
     if (!_html) {
-        NSDictionary *data = @{@"title" : [NSString stringWithFormat:@"%@ %@",_extensionTitle, _title], @"authorID" : @(_authorID),@"author" : _author,@"recommended" : @(_isRecommended), @"logoURL" : _logoURL, @"content" : _body, @"license" : _license, @"language" : _language,@"os" : _os, @"recordTime" : _recordTime,@"homepageURL" : _homepageURL, @"documentURL" : _documentURL,@"downloadURL" : _downloadURL};
+        NSDictionary *data = @{
+                               @"title": [NSString stringWithFormat:@"%@ %@", _extensionTitle, _title],
+                               @"authorID": @(_authorID),
+                               @"author": _author,
+                               @"recommended": @(_isRecommended),
+                               @"logoURL": _logoURL,
+                               @"content": _body,
+                               @"license": _license,
+                               @"language": _language,
+                               @"os": _os,
+                               @"recordTime": _recordTime,
+                               @"homepageURL": _homepageURL,
+                               @"documentURL": _documentURL,
+                               @"c": _downloadURL,
+                               };
+        
         _html = [Utils HTMLWithData:data usingTemplate:@"software"];
     }
+    
     return _html;
 }
 

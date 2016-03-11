@@ -9,6 +9,7 @@
 #import "SoftwareListVC.h"
 #import "OSCSoftware.h"
 #import "SoftwareCell.h"
+#import "DetailsViewController.h"
 
 
 static NSString *kSoftwareCellID = @"SoftwareCell";
@@ -111,6 +112,10 @@ static NSString *kSoftwareCellID = @"SoftwareCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    OSCSoftware *software = self.objects[indexPath.row];
+    DetailsViewController *detailsViewController = [[DetailsViewController alloc] initWithSoftware:software];
+    [self.navigationController pushViewController:detailsViewController animated:YES];
 }
 
 #pragma mark - 懒加载

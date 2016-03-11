@@ -102,6 +102,18 @@
 - (void)switchInputView {
     if (_isEmojiPageOnScreen) {
         
+        _emojiPageVC.view.hidden = YES;
+        [_editingBar.editView becomeFirstResponder];
+        [_editingBar.inputViewButton setImage:[UIImage imageNamed:@"toolbar-emoji2"] forState:UIControlStateNormal];
+        _isEmojiPageOnScreen = NO;
+    }else {
+    
+        [_editingBar.editView resignFirstResponder];
+        [_editingBar.inputViewButton setImage:[UIImage imageNamed:@"toolbar-text"] forState:UIControlStateNormal];
+        _editingBarYConstraint.constant = 216;
+        [self setBottomBarHeight];
+        _emojiPageVC.view.hidden = NO;
+        _isEmojiPageOnScreen = YES;
     }
 }
 

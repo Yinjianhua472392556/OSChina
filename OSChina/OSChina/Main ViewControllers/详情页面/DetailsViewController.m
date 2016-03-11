@@ -373,7 +373,9 @@
 }
 
 - (void)loadSoftwareDetails:(OSCSoftwareDetails *)softwareDetails {
-    [self.detailsView loadHTMLString:softwareDetails.html baseURL:[[NSBundle mainBundle] resourceURL]];
+    
+    NSString *temp = softwareDetails.html;
+    [self.detailsView loadHTMLString:temp baseURL:[[NSBundle mainBundle] resourceURL]];
     
     _isStarred = softwareDetails.isFavorite;
     _webURL = [softwareDetails.url absoluteString];
@@ -429,9 +431,8 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     
-    if ([request.URL.absoluteString hasPrefix:@"file"]) {
-        return YES;
-    }
+    if ([request.URL.absoluteString hasPrefix:@"file"]) {return YES;}
+    
     [Utils analysis:[request.URL absoluteString] andNavController:self.navigationController];
     return [request.URL.absoluteString isEqualToString:@"about:blank"];
 }
