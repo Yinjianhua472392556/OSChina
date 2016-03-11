@@ -7,7 +7,12 @@
 //
 
 #import "BottomBarViewController.h"
+#import "CommentsViewController.h"
+
+
 
 @interface CommentsBottomBarViewController : BottomBarViewController
+
+- (instancetype)initWithCommentType:(CommentType)commentType andObjectID:(int64_t)objectID;
 
 @end

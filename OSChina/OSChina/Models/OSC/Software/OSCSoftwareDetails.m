@@ -91,4 +91,11 @@
     return _html;
 }
 
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@"<%@ : %p, %@>", [self class], self, @{@"_authorID" : @(_authorID) ,@"_author" : _author, @"_softwareID" : @(_softwareID), @"_isRecommended" : @(_isRecommended), @"_title" : _title, @"_extensionTitle" : _extensionTitle, @"_license" : _license, @"_body" : _body, @"_os" : _os, @"_language" : _language, @"_recordTime" : _recordTime, @"_url" : _url, @"_homepageURL" : _homepageURL, @"_documentURL" : _documentURL, @"_downloadURL" : _downloadURL, @"_logoURL" : _logoURL, @"_isFavorite" : @(_isFavorite), @"_tweetCount" : @(_tweetCount)}];
+}
+
+
+
 @end

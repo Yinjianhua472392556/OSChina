@@ -351,6 +351,7 @@
 		18830A9B1C8D294300AB888C /* OSCSoftwareDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 18830A9A1C8D294300AB888C /* OSCSoftwareDetails.m */; settings = {ASSET_TAGS = (); }; };
 		18830A9E1C8D2CDC00AB888C /* OSCPostDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 18830A9D1C8D2CDC00AB888C /* OSCPostDetails.m */; settings = {ASSET_TAGS = (); }; };
 		18830AA11C8D317E00AB888C /* OSCBlogDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 18830AA01C8D317E00AB888C /* OSCBlogDetails.m */; settings = {ASSET_TAGS = (); }; };
+		188C70691C92BB320030B3FD /* SoftwareCommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188C70681C92BB320030B3FD /* SoftwareCommentsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		1890AE531C83DBEE00047637 /* OptionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890AE521C83DBEE00047637 /* OptionButton.m */; settings = {ASSET_TAGS = (); }; };
 		1890AE561C83F0C000047637 /* Homepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1890AE551C83F0C000047637 /* Homepage.storyboard */; settings = {ASSET_TAGS = (); }; };
 		1890AE591C83F0F300047637 /* HomepageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890AE581C83F0F300047637 /* HomepageViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -780,6 +781,8 @@
 		18830A9D1C8D2CDC00AB888C /* OSCPostDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCPostDetails.m; sourceTree = "<group>"; };
 		18830A9F1C8D317E00AB888C /* OSCBlogDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCBlogDetails.h; sourceTree = "<group>"; };
 		18830AA01C8D317E00AB888C /* OSCBlogDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCBlogDetails.m; sourceTree = "<group>"; };
+		188C70671C92BB320030B3FD /* SoftwareCommentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoftwareCommentsViewController.h; sourceTree = "<group>"; };
+		188C70681C92BB320030B3FD /* SoftwareCommentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoftwareCommentsViewController.m; sourceTree = "<group>"; };
 		1890AE511C83DBEE00047637 /* OptionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionButton.h; sourceTree = "<group>"; };
 		1890AE521C83DBEE00047637 /* OptionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionButton.m; sourceTree = "<group>"; };
 		1890AE551C83F0C000047637 /* Homepage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Homepage.storyboard; sourceTree = "<group>"; };
@@ -1455,6 +1458,8 @@
 				187651281C7EE01000E4E269 /* SoftwareListVC.m */,
 				1876512D1C7EE80D00E4E269 /* SoftwareCell.h */,
 				1876512E1C7EE80D00E4E269 /* SoftwareCell.m */,
+				188C70671C92BB320030B3FD /* SoftwareCommentsViewController.h */,
+				188C70681C92BB320030B3FD /* SoftwareCommentsViewController.m */,
 			);
 			path = "软件";
 			sourceTree = "<group>";
@@ -2209,6 +2214,7 @@
 				1876513A1C7EF09000E4E269 /* OSCBlog.m in Sources */,
 				1876512F1C7EE80D00E4E269 /* SoftwareCell.m in Sources */,
 				18D688001C881C3E00F0E4E8 /* EmojiPanelVC.m in Sources */,
+				188C70691C92BB320030B3FD /* SoftwareCommentsViewController.m in Sources */,
 				182C788A1C7C00A700FD2B63 /* Config.m in Sources */,
 				1890AE691C84217A00047637 /* OSCMyInfo.m in Sources */,
 				18D687ED1C87E46C00F0E4E8 /* OSLicensePage.m in Sources */,

@@ -21,6 +21,8 @@
 #import "Config.h"
 #import "UIBarButtonItem+Badge.h"
 #import "Config.h"
+#import "SoftwareCommentsViewController.h"
+#import "CommentsBottomBarViewController.h"
 
 @interface DetailsViewController ()<UIWebViewDelegate,UIScrollViewDelegate,UIAlertViewDelegate>
 
@@ -229,6 +231,8 @@
                 ONOXMLElement *XML = [responseDocument.rootElement firstChildWithTag:_tag];
                 details = [[_detailsClass alloc] initWithXML:XML];
             }
+            
+            NSLog(@"fetchDetails里面的:  %@",details);
             [self performSelector:_loadMethod withObject:details];
             self.operationBar.isStarred = _isStarred;
             
@@ -306,8 +310,12 @@
     
         if (weakSelf.commentType == CommentTypeSoftware) {
             
+            SoftwareCommentsViewController *softwareCommentsVC = [[SoftwareCommentsViewController alloc] initWithSoftwareID:weakSelf.objectID andSoftwareName:weakSelf.softwareName];
+            [weakSelf.navigationController pushViewController:softwareCommentsVC animated:YES];
         }else {
-        
+            
+            CommentsBottomBarViewController *commentsBVC = [[CommentsBottomBarViewController alloc] initWithCommentType:weakSelf.commentType andObjectID:weakSelf.objectID];
+            [weakSelf.navigationController pushViewController:commentsBVC animated:YES];
         }
     };
     
@@ -374,6 +382,8 @@
 
 - (void)loadSoftwareDetails:(OSCSoftwareDetails *)softwareDetails {
     
+    
+    NSLog(@"loadSoftwareDetails里面的: %@",softwareDetails);
     NSString *temp = softwareDetails.html;
     [self.detailsView loadHTMLString:temp baseURL:[[NSBundle mainBundle] resourceURL]];
     
