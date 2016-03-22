@@ -10,6 +10,8 @@
 #import "OSCNews.h"
 #import "NewsCell.h"
 #import "Utils.h"
+#import "DetailsViewController.h"
+
 
 static NSString *kNewsCellID = @"NewsCell";
 
@@ -119,6 +121,18 @@ static NSString *kNewsCellID = @"NewsCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    OSCNews *news = self.objects[indexPath.row];
+    if (news.eventURL.absoluteString.length > 0) {
+        
+    }else if (news.url.absoluteString.length > 0){
+    
+        [Utils analysis:news.url.absoluteString andNavController:self.navigationController];
+    }else {
+    
+        DetailsViewController *detailsViewController = [[DetailsViewController alloc] initWithNews:news];
+        [self.navigationController pushViewController:detailsViewController animated:YES];
+    }
 }
 
 #pragma mark - 懒加载

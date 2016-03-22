@@ -14,6 +14,8 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "Config.h"
 #import "OSCUser.h"
+#import "ImageViewerController.h"
+#import "TweetDetailsWithBottomBarViewController.h"
 
 static NSString * const kTweetCellID = @"TweetCell";
 
@@ -163,9 +165,10 @@ static NSString * const kTweetCellID = @"TweetCell";
     cell.authorLabel.textColor = [UIColor nameColor];
     
 //    [cell.portrait addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushUserDetailsView:)]];
-//    [cell.thumbnail addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(loadLargeImage:)]];
-//    [cell.likeButton addTarget:self action:@selector(togglePraise:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.thumbnail addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(loadLargeImage:)]];
+    [cell.likeButton addTarget:self action:@selector(togglePraise:) forControlEvents:UIControlEventTouchUpInside];
 //    [cell.likeListLabel addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(PushToLikeList:)]];
+    
     cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];
     cell.selectedBackgroundView.backgroundColor = [UIColor selectCellSColor];
     
@@ -232,6 +235,10 @@ static NSString * const kTweetCellID = @"TweetCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    OSCTweet *tweet = self.objects[indexPath.row];
+    TweetDetailsWithBottomBarViewController *tweetDetailsBVC = [[TweetDetailsWithBottomBarViewController alloc] initWithTweetID:tweet.tweetID];
+    [self.navigationController pushViewController:tweetDetailsBVC animated:YES];
 }
 
 - (BOOL)tableView:(UITableView *)tableView shouldShowMenuForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -396,6 +403,14 @@ static NSString * const kTweetCellID = @"TweetCell";
 //- (void)downloadImageThenReload:(NSURL *)imageURL {
 //
 //}
+
+#pragma mark - 加载大图
+- (void)loadLargeImage:(UITapGestureRecognizer *)recognizer {
+
+    OSCTweet *tweet = self.objects[recognizer.view.tag];
+    ImageViewerController *imageViewerVC = [[ImageViewerController alloc] initWithImageURL:tweet.bigImgURL];
+    [self presentViewController:imageViewerVC animated:YES completion:nil];
+}
 
 #pragma mark - 懒加载
 - (NSMutableDictionary *)offscreenCells {

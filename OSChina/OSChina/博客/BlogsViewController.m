@@ -11,6 +11,7 @@
 #import "BlogCell.h"
 #import "Config.h"
 #import "Utils.h"
+#import "DetailsViewController.h"
 
 static NSString *kBlogCellID = @"BlogCell";
 
@@ -113,6 +114,9 @@ static NSString *kBlogCellID = @"BlogCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
+    OSCBlog *blog = self.objects[indexPath.row];
+    DetailsViewController *detailsVC = [[DetailsViewController alloc] initWithBlog:blog];
+    [self.navigationController pushViewController:detailsVC animated:YES];
 }
 
 #pragma mark - 懒加载

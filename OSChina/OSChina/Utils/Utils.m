@@ -19,6 +19,9 @@
 #import "OSCPost.h"
 #import "PostsViewController.h"
 #import "TweetsViewController.h"
+#import "OSCTweet.h"
+#import "TweetDetailsWithBottomBarViewController.h"
+#import "ImageViewerController.h"
 
 @implementation Utils
 
@@ -316,10 +319,10 @@
                     viewController = [[DetailsViewController alloc] initWithNews:news];
                     viewController.navigationItem.title = @"博客详情";
                 } else if ([type isEqualToString:@"tweet"]){
-//                    OSCTweet *tweet = [OSCTweet new];
-//                    tweet.tweetID = [pathComponents[3] longLongValue];
-//                    viewController = [[TweetDetailsWithBottomBarViewController alloc] initWithTweetID:tweet.tweetID];
-//                    viewController.navigationItem.title = @"动弹详情";
+                    OSCTweet *tweet = [OSCTweet new];
+                    tweet.tweetID = [pathComponents[3] longLongValue];
+                    viewController = [[TweetDetailsWithBottomBarViewController alloc] initWithTweetID:tweet.tweetID];
+                    viewController.navigationItem.title = @"动弹详情";
                 }
             } else if(pathComponents.count == 5) {
                 NSString *type = pathComponents[3];
@@ -390,9 +393,9 @@
                 }
             }
         } else if ([prefix isEqualToString:@"static"]) {
-//            ImageViewerController *imageViewerVC = [[ImageViewerController alloc] initWithImageURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://%@", url]]];
+            ImageViewerController *imageViewerVC = [[ImageViewerController alloc] initWithImageURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://%@", url]]];
             
-//            [navigationController presentViewController:imageViewerVC animated:YES completion:nil];
+            [navigationController presentViewController:imageViewerVC animated:YES completion:nil];
             
             return;
         }

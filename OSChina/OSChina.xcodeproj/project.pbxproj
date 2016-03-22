@@ -367,6 +367,10 @@
 		18C11D111C7BF259001D2706 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C11D0F1C7BF259001D2706 /* Main.storyboard */; };
 		18C11D131C7BF259001D2706 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C11D121C7BF259001D2706 /* Assets.xcassets */; };
 		18C11D161C7BF259001D2706 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C11D141C7BF259001D2706 /* LaunchScreen.storyboard */; };
+		18C3752D1CA127CC00B32C5F /* TweetDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C3752C1CA127CC00B32C5F /* TweetDetailsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		18C375301CA12EF800B32C5F /* TweetDetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C3752F1CA12EF800B32C5F /* TweetDetailsCell.m */; settings = {ASSET_TAGS = (); }; };
+		18C375331CA13C4200B32C5F /* TweetDetailsWithBottomBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C375321CA13C4200B32C5F /* TweetDetailsWithBottomBarViewController.m */; settings = {ASSET_TAGS = (); }; };
+		18C5D3811C93B7D60028C566 /* ImageViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5D3801C93B7D60028C566 /* ImageViewerController.m */; settings = {ASSET_TAGS = (); }; };
 		18D687E71C87D70800F0E4E8 /* SettingsPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D687E61C87D70800F0E4E8 /* SettingsPage.m */; settings = {ASSET_TAGS = (); }; };
 		18D687EA1C87E45B00F0E4E8 /* AboutPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D687E91C87E45B00F0E4E8 /* AboutPage.m */; settings = {ASSET_TAGS = (); }; };
 		18D687ED1C87E46C00F0E4E8 /* OSLicensePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D687EC1C87E46C00F0E4E8 /* OSLicensePage.m */; settings = {ASSET_TAGS = (); }; };
@@ -809,6 +813,14 @@
 		18C11D121C7BF259001D2706 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18C11D151C7BF259001D2706 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18C11D171C7BF259001D2706 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C3752B1CA127CC00B32C5F /* TweetDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetDetailsViewController.h; sourceTree = "<group>"; };
+		18C3752C1CA127CC00B32C5F /* TweetDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetDetailsViewController.m; sourceTree = "<group>"; };
+		18C3752E1CA12EF800B32C5F /* TweetDetailsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetDetailsCell.h; sourceTree = "<group>"; };
+		18C3752F1CA12EF800B32C5F /* TweetDetailsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetDetailsCell.m; sourceTree = "<group>"; };
+		18C375311CA13C4200B32C5F /* TweetDetailsWithBottomBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetDetailsWithBottomBarViewController.h; sourceTree = "<group>"; };
+		18C375321CA13C4200B32C5F /* TweetDetailsWithBottomBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetDetailsWithBottomBarViewController.m; sourceTree = "<group>"; };
+		18C5D37F1C93B7D60028C566 /* ImageViewerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewerController.h; sourceTree = "<group>"; };
+		18C5D3801C93B7D60028C566 /* ImageViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewerController.m; sourceTree = "<group>"; };
 		18D687E51C87D70800F0E4E8 /* SettingsPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsPage.h; sourceTree = "<group>"; };
 		18D687E61C87D70800F0E4E8 /* SettingsPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsPage.m; sourceTree = "<group>"; };
 		18D687E81C87E45B00F0E4E8 /* AboutPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPage.h; sourceTree = "<group>"; };
@@ -1609,6 +1621,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		18C3752A1CA1268D00B32C5F /* 动弹详情 */ = {
+			isa = PBXGroup;
+			children = (
+				18C3752B1CA127CC00B32C5F /* TweetDetailsViewController.h */,
+				18C3752C1CA127CC00B32C5F /* TweetDetailsViewController.m */,
+				18C3752E1CA12EF800B32C5F /* TweetDetailsCell.h */,
+				18C3752F1CA12EF800B32C5F /* TweetDetailsCell.m */,
+				18C375311CA13C4200B32C5F /* TweetDetailsWithBottomBarViewController.h */,
+				18C375321CA13C4200B32C5F /* TweetDetailsWithBottomBarViewController.m */,
+			);
+			path = "动弹详情";
+			sourceTree = "<group>";
+		};
 		18D687E11C87D6AA00F0E4E8 /* 设置 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1709,6 +1734,9 @@
 				18F02AE51C7FF6080080AE1F /* TweetsViewController.m */,
 				18F02AE71C7FF6310080AE1F /* TweetCell.h */,
 				18F02AE81C7FF6310080AE1F /* TweetCell.m */,
+				18C5D37F1C93B7D60028C566 /* ImageViewerController.h */,
+				18C5D3801C93B7D60028C566 /* ImageViewerController.m */,
+				18C3752A1CA1268D00B32C5F /* 动弹详情 */,
 			);
 			path = "动弹";
 			sourceTree = "<group>";
@@ -2226,16 +2254,20 @@
 				18F02AEF1C7FF9D30080AE1F /* OSCUser.m in Sources */,
 				1890AE531C83DBEE00047637 /* OptionButton.m in Sources */,
 				18830A8F1C8A71BE00AB888C /* TeamMember.m in Sources */,
+				18C375301CA12EF800B32C5F /* TweetDetailsCell.m in Sources */,
 				187651361C7EEDE800E4E269 /* BlogCell.m in Sources */,
+				18C5D3811C93B7D60028C566 /* ImageViewerController.m in Sources */,
 				18C11D081C7BF259001D2706 /* main.m in Sources */,
 				1890AE661C841FB300047637 /* UIScrollView+ScalableCover.m in Sources */,
 				1890AE621C83F16700047637 /* DiscoverViewController.m in Sources */,
 				18830A951C8A7CC400AB888C /* OSCReference.m in Sources */,
 				18D687E71C87D70800F0E4E8 /* SettingsPage.m in Sources */,
+				18C375331CA13C4200B32C5F /* TweetDetailsWithBottomBarViewController.m in Sources */,
 				18F02AE31C7FEC1F0080AE1F /* NewsCell.m in Sources */,
 				1890AE5C1C83F10B00047637 /* MyBasicInfoViewController.m in Sources */,
 				182C78A41C7C385F00FD2B63 /* HorizonalTableViewController.m in Sources */,
 				182C78991C7C0E5200FD2B63 /* OSCTabBarController.m in Sources */,
+				18C3752D1CA127CC00B32C5F /* TweetDetailsViewController.m in Sources */,
 				18D687EA1C87E45B00F0E4E8 /* AboutPage.m in Sources */,
 				18830A821C8A707600AB888C /* CommentsViewController.m in Sources */,
 				182C78A11C7C384100FD2B63 /* TitleBarView.m in Sources */,
